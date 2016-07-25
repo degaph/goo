@@ -1,0 +1,102 @@
+<div id="container">
+  <div class="row">
+    <h1>Documentation</h1>
+  </div>
+  <!-- <div class="row">
+    <h2>/apps*</h2>
+    <p>Endpoints for dealing with alterations to your app, the bots your app serves, and the platforms those bots are on.</p>
+  </div>
+  <div class="row">
+    <h3>POST /apps/signup.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name, platforms]</p>
+    <p><b>Description:</b> Adds an app to the platform and signs up your first bot to the platform</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz", "platforms": ["facebook"]}' http://ec2-54-208-153-78.compute-1.amazonaws.com/apps/signup.json
+    </code></pre>
+  </div>
+  <div class="row">
+    <h3>POST /apps/add_bot.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name, platforms]</p>
+    <p><b>Description:</b> Adds a bot to an existing account</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz", "platforms": ["facebook"]}' http://ec2-54-208-153-78.compute-1.amazonaws.com/apps/add_bot.json
+    </code></pre>
+  </div>
+  <div class="row">
+    <h3>POST /apps/drop_bot.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name]</p>
+    <p><b>Description:</b> Drops a bot for an existing account</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz"}' http://ec2-54-208-153-78.compute-1.amazonaws.com/apps/drop_bot.json
+    </code></pre>
+  </div>
+  <div class="row">
+    <h3>POST /apps/add_platform.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name, platform]</p>
+    <p><b>Description:</b> Adds a platform for a bot for an existing account</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz", "platform": "facebook"}' http://ec2-54-208-153-78.compute-1.amazonaws.com/apps/add_platform.json
+    </code></pre>
+  </div>
+  <div class="row">
+    <h3>POST /apps/drop_platform.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name, platform]</p>
+    <p><b>Description:</b> Drops a platform for a bot for an existing account</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz", "platform": "facebook"}' http://ec2-54-208-153-78.compute-1.amazonaws.com/apps/drop_platform.json
+    </code></pre>
+  </div> -->
+  <div class="row">
+    <h2>/interactions*</h2>
+    <p>Log the interactions your bots have in order to get access to analytics and suggested changes.</p>
+  </div>
+  <div class="row">
+    <h3>POST /interactions/log.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name, platform, user_id, bot_rule, time, user_input, bot_response]</p>
+    <p><b>Description:</b> Log an interaction with a user engaging with the bot</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz","platform":"twitter","user_id":"abc123","bot_rule":"bot do *","time":"2016-07-06 02:12:09 -0400","user_input":"Hi bot!","bot_response":"[{\"text\" => \"Hey human, how goes it?\"}]"}' http://ec2-54-208-153-78.compute-1.amazonaws.com/interactions/log.json
+    </code></pre>
+  </div>
+  <div class="row">
+    <h2>/user_blacklists*</h2>
+    <p>Add or remove people from analysis</p>
+  </div>
+  <div class="row">
+    <h3>POST /user_blacklists/add_user.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name, platform, user_id]</p>
+    <p><b>Description:</b> Remove a person from the interactions that should be logged (e.g. bot testers, staff trying out the bot)</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz", "platform": "facebook", "user_id":"abc123"}' http://ec2-54-208-153-78.compute-1.amazonaws.com/user_blacklists/add_user.json
+    </code></pre>
+  </div>
+  <div class="row">
+    <h3>POST /user_blacklists/drop_user.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name, platform, user_id]</p>
+    <p><b>Description:</b> Re-instate a person from the interactions that should be logged (e.g. bot testers, staff trying out the bot)</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz", "platform": "facebook", "user_id":"abc123"}' http://ec2-54-208-153-78.compute-1.amazonaws.com/user_blacklists/drop_user.json
+    </code></pre>
+  </div>
+  <div class="row">
+    <h2>/manifests*</h2>
+    <p>Provide a full outline of your current Rivescript manifest for better analytics tuning</p>
+  </div>
+  <div class="row">
+    <h3>POST /manifests/ingest.json</h3>
+    <p><b>Parameters Required:</b> [account_name, bot_name, platform, manifest_data]</p>
+    <p><b>Description:</b> Update the latest rule set from a Rivescript file representing the current state of what the bot is using</p>
+    <b>Example:</b><br/>
+    <pre><code class="language-bash">
+      curl --user gooble:gobble -H "Content-Type: application/json" -X POST -d '{"account_name":"abc","bot_name":"xyz", "platform": "facebook", "manifest_data":"! version = 2.0\n\n+ hello bot\n- Hello, human!"}' http://ec2-54-208-153-78.compute-1.amazonaws.com/manifests/ingest.json
+    </code></pre>
+  </div>  
+</div>

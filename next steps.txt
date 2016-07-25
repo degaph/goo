@@ -1,0 +1,5 @@
+1. Ask bot makers what else they are looking for
+2. Conversion tracking / goal tracking setup so that bot makers can input that directly into the system.
+3. Recommendations but actually make it a thing
+4. Libraries for plug and play recording of actions.
+Mark a failure rule, then generalize user inputs from those failures for thematic results.

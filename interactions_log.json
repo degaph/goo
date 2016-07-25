@@ -1,0 +1,1 @@
+{"account_name":"abc","bot_name":"xyz", "platform": "twitter", "user_id":"abc123", "bot_rule": "bot do *", "time": "2016-07-06 02:12:09 -0400", "user_input": "Hi bot!", "bot_response": "[{"text":"Hey human, how goes it?"}]"}

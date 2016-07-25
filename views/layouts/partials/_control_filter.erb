@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-md-12 nice-border">
+    <form class="form-horizontal" action="<%= post_path %>" method="post">
+      <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Filter By Time: </label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="date-picker" size="60" name="timeframe" value="<%= @default_timeframe_string %>">
+          <input type="hidden" class="form-control" id="percentile_low" name="percentile_low" value="<%= @percentile_low %>">
+          <input type="hidden" class="form-control" id="percentile_high" name="percentile_high" value="<%= @percentile_high %>">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Filter By Platform: </label>
+        <div class="col-sm-10">
+        <% @bot.platforms_supported.each do |platform| %>
+          <div class="checkbox inline">
+            <label>
+              <input type="checkbox" class="platform_check" id="<%= platform %>" name="<%= platform %>" value="<%= platform %>" <%= params.keys.include?(platform) ? ((@rule.nil? || @rule && @rule.platform == platform) ? "checked" : "") : "" %> <%= @rule.nil? ? "" : "disabled" %>> <%= platform %>
+            </label>
+          </div>
+        <% end %>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword" class="col-sm-2 control-label">Filter By User Activity Levels: </label>
+        <div class="col-sm-10">
+          <b style="margin-right: 10px;">0% (First Timers)</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="[<%= @percentile_low %>,<%= @percentile_high %>]"/> <b style="margin-left: 10px;">100% (Core Users)</b>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Update Filter</button>      
+    </form>
+  </div>
+</div>
+<br />
+<script type="text/javascript">
+$("#ex2").slider({});
+$("#ex2").on("slide", function(slideEvt) {
+  var sorted = slideEvt.value.sort(function(a, b){return a-b});
+	$("#percentile_low").val(sorted[0]);
+	$("#percentile_high").val(sorted[1]);
+});
+$('#date-picker').dateRangePicker(
+{
+	showShortcuts: true,
+	shortcuts : 
+	{
+		'prev-days': [3,5,7],
+		'prev': ['week','month','year'],
+		'next-days':null,
+		'next':null
+	},
+	beforeShowDay: function(t)
+	{
+		var valid = t.getTime() < Date.now();
+		var _class = '';
+		var _tooltip = valid ? '' : 'No data yet';
+		return [valid,_class,_tooltip];
+	}
+
+});
+</script>

@@ -1,0 +1,196 @@
+<script src="/js/sigma.min.js"></script>
+<script src="/js/sigma.parsers.json.js"></script>
+<script src="/js/sigma.layout.forceAtlas2/worker.js"></script>
+<script src="/js/sigma.layout.forceAtlas2/supervisor.js"></script>
+<div id="container" class="container">
+  <style>
+  #graph-viewer {
+    width: 770px;
+    height: 770px;
+    border-radius: 5px;
+    border: 2px solid #5A696E;
+    padding: 0px;
+  }
+  #graph-container {
+    width: 770px;
+    height: 770px;
+    position: absolute;
+    margin-left: -2px;
+  }
+  #node-stats-container {
+    width: 770px;
+    height: 770px;
+    border-radius: 25px;
+    border: 2px solid #5A696E;
+    position: absolute;
+  }
+  </style>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Visual Inspector</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div id="graph-viewer" class="col-md-8">
+      <div id="graph-container">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="node-stats-container" class="col-md-12">
+      <div id="node-stats">
+        <h3>Overview</h3>
+        <h2>Rule "<div style="display:inline" id="node_name"></div>"</h2>
+        <ul>
+          <li><b>Bounce Rate: </b><div style="display:inline" id="node_loss"></div></li>
+          <li><b>Total Bounces: </b><div style="display:inline" id="node_loss_raw"></div></li>
+        </ul>
+        <div><b>Recommended Reply Changes: </b><div id="should_change"></div></div>
+        <div style="display:inline" id="health_sentence"></div>
+        <div><b>Typical next rules users hit </b><div style="display:inline" id="next_step"></div></div>
+        <div><b>Bounce rates for these next rules </b><div style="display:inline" id="dropped_interaction_risks"></div></div>
+        <h4>Users who continued talking at this point</h4>
+        <ul>
+          <li><b>Average Conversation Length: </b><div style="display:inline" id="average_length_not_dropped_conversations"></div></li>
+          <li><b>Number of sessions continuing from here: </b><div style="display:inline" id="not_dropped_interaction_count"></div></li>
+          <li><b>Number of users continuing from here: </b><div style="display:inline" id="not_dropped_user_count"></div></li>
+          <li><b>Modal Human Inputs: </b><div style="display:inline" id="not_dropped_typical_human_messages"></div></li>
+          <li><b>Modal Bot Responses: </b><div style="display:inline" id="not_dropped_typical_bot_responses"></div></li>
+        </ul>
+        <h4>Users who stopped talking at this point</h4>
+        <ul>
+          <li><b>Average Conversation Length: </b><div style="display:inline" id="average_length_dropped_conversations"></div></li>
+          <li><b>Number of sessions lost here: </b><div style="display:inline" id="dropped_interaction_count"></div></li>
+          <li><b>Number of users lost here: </b><div style="display:inline" id="dropped_user_count"></div></li>
+          <li><b>Modal Human Inputs: </b><div style="display:inline" id="dropped_typical_human_messages"></div></li>
+          <li><b>Modal Bot Responses: </b><div style="display:inline" id="dropped_typical_bot_responses"></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<script>
+  function deal_with_responses(responses){
+    var responses_str = ""
+    for (i = 0; i < responses.length; i++) { 
+        responses_str = responses_str.concat("\""+responses[i][0]+"\" ("+responses[i][1].toString()+"), ")
+    }
+    return responses_str.substr(0, responses_str.length-2)
+  }
+sigma.parsers.json( "/network/latest/<%= params[:bot_id] %>.json",
+
+  {container: 'graph-container'},
+
+  function(s) {
+    var s_copy = s
+    s.graph.nodes().forEach(function(node, i, a) {
+      node.x = Math.cos(Math.PI * 2 * i / a.length);
+      node.y = Math.sin(Math.PI * 2 * i / a.length);
+    });
+    s.graph.edges().forEach(function(edge, i, a){
+      edge.type = 'curve'
+    })
+    s.bind('clickNode', function(e) {
+      $.get( "/rules/tooltip/"+e.data.node.rule_id+".json", function( data ) {
+        data = JSON.parse(data)
+        console.log(data["not_dropped_typical_human_messages"])
+        $("#node_label").text(e.data.node.label)
+        $("#node_name").text(e.data.node.label)
+        $("#node_loss").text(e.data.node.loss.toString()+"%")
+        var health_sentence = ""
+        if (e.data.node.loss/100 < 0.01){
+          health_sentence = "This rule seems to be working pretty well already."
+        } else if (e.data.node.loss/100 < 0.1){
+          health_sentence = "This rule seems to have mixed results of people continuing conversations and stopping conversations."
+        } else if (e.data.node.loss/100 < 1){
+          health_sentence = "This rule seems to be working poorly."
+        }
+        $("#health_sentence").html(health_sentence)
+        next_step_string = ""
+        for (i = 0; i < 5; i++){
+          next_step_string = next_step_string.concat("\""+data["next_steps"][i][0]+"\" ("+Math.round(data["next_steps"][i][1]*100)+"%), ")
+        }
+        next_step_string.substr(0, next_step_string.length-2)
+        $("#next_step").html(next_step_string.substr(0, next_step_string.length-2))
+        dropped_interaction_risks_string = ""
+        for (i = 0; i < 5; i++){
+          dropped_interaction_risks_string = dropped_interaction_risks_string.concat("\""+data["dropped_interaction_risks"][i][0]+"\" ("+Math.round(data["dropped_interaction_risks"][i][1]*10000)/100+"%), ")
+        }
+        $("#dropped_interaction_risks").text(dropped_interaction_risks_string.substr(0, dropped_interaction_risks_string.length-2))
+        should_change_string = ""
+        for (i = 0; i < data["should_change"].length; i++){
+          if (data["should_change"][i][1] < 0){
+            should_change_string = should_change_string.concat(" reply more with \""+data["should_change"][i][0]+"\" ("+Math.abs(Math.round(data["should_change"][i][1]*10000)/100)+"% people bounce less), ")
+          } else {
+            should_change_string = should_change_string.concat(" reply less with \""+data["should_change"][i][0]+"\" ("+Math.round(data["should_change"][i][1]*10000)/100+"% people bounce more), ")            
+          }
+        }
+        $("#should_change").text(should_change_string.substr(0, should_change_string.length-2))
+        $("#node_loss_raw").text(e.data.node.loss_raw)
+        $("#average_length_not_dropped_conversations").html(Math.round(data["average_length_not_dropped_conversations"]*100)/100)
+        $("#not_dropped_interaction_count").html(data["not_dropped_interaction_count"])
+        $("#not_dropped_user_count").html(data["not_dropped_user_count"])
+        $("#not_dropped_typical_human_messages").html(deal_with_responses(data["not_dropped_typical_human_messages"]))
+        $("#not_dropped_typical_bot_responses").html(deal_with_responses(data["not_dropped_typical_bot_responses"]))
+        $("#average_length_dropped_conversations").html(Math.round(data["average_length_dropped_conversations"]*100)/100)
+        $("#dropped_interaction_count").html(data["dropped_interaction_count"])
+        $("#dropped_user_count").html(data["dropped_user_count"])
+        $("#dropped_typical_human_messages").html(deal_with_responses(data["dropped_typical_human_messages"]))
+        $("#dropped_typical_bot_responses").html(deal_with_responses(data["dropped_typical_bot_responses"]))
+      });
+    });
+    s.bind('overNode outNode clickNode doubleClickNode rightClickNode', function(e) {
+      console.log(e.type, e.data.node.label, e.data.captor);
+    });
+    //Call refresh to render the new graph
+    s.startForceAtlas2({worker: true, barnesHutOptimize: false, gravity: 10});
+    setTimeout(function(){ console.log(s_copy);s_copy.killForceAtlas2(); }, 3000);
+    s.refresh();
+  });
+/**
+ * This example shows the available edge label renderers for the canvas
+ * renderer.
+ */
+// var i,
+//     s,
+//     N = 10,
+//     E = 50,
+//     g = {
+//       nodes: [],
+//       edges: []
+//     };
+//
+// // Generate a random graph:
+// for (i = 0; i < N; i++)
+//   g.nodes.push({
+//     id: 'n' + i,
+//     label: 'Node ' + i,
+//     x: Math.random(),
+//     y: Math.random(),
+//     size: Math.random(),
+//     color: '#666'
+//   });
+//
+// for (i = 0; i < E; i++)
+//   g.edges.push({
+//     id: 'e' + i,
+//     label: 'Edge ' + i,
+//     source: 'n' + (Math.random() * N | 0),
+//     target: 'n' + (Math.random() * N | 0),
+//     size: Math.random(),
+//     color: '#ccc',
+//     type: ['line', 'curve', 'arrow', 'curvedArrow'][Math.random() * 4 | 0]
+//   });
+//
+// // Instantiate sigma:
+// s = new sigma({
+//   graph: g,
+//   renderer: {
+//     container: document.getElementById('graph-container'),
+//     type: 'canvas'
+//   },
+//   settings: {
+//     edgeLabelSize: 'proportional'
+//   }
+// });
+// 
+</script>

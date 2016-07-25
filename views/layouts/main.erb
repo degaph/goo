@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bot Analysis</title>
+    <%= partial "/layouts/partials/header" %>
+  </head>
+  <body>
+      <div class="bs-example bs-navbar-top-example" data-example-id="navbar-static-top">
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar" />
+                <span class="icon-bar" />
+                <span class="icon-bar" />
+              </button>
+              <a class="navbar-brand" href="#">Bot Analyzer</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+              <ul class="nav navbar-nav">
+                <% if session[:account_id] %>
+                  <% Bot.where(account_id: Account.find(session[:account_id]).id).each do |bot| %>
+                    <% if Interaction.where(bot_id: bot.id).count == 0 %>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= bot.bot_name %> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            No Data Yet. <a href="/documentation">Setup Info</a>
+                          </li>
+                        </ul>
+                      </li>
+                    <% else %>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= bot.bot_name %> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="/rules/outline/<%= bot.id %>/<%= (Time.now-1.days).strftime("%Y-%m-%d") %>/<%= Time.now.strftime("%Y-%m-%d") %>">Last day</a>
+                          </li>
+                          <li>
+                            <a href="/rules/outline/<%= bot.id %>/<%= (Time.now-7.days).strftime("%Y-%m-%d") %>/<%= Time.now.strftime("%Y-%m-%d") %>">Last week</a>
+                          </li>
+                          <li>
+                            <a href="/rules/outline/<%= bot.id %>/<%= (Time.now-30.days).strftime("%Y-%m-%d") %>/<%= Time.now.strftime("%Y-%m-%d") %>">Last 30 days</a>
+                          </li>
+                          <li>
+                            <a href="/rules/outline/<%= bot.id %>/<%= Interaction.where(bot_id: bot.id).order(:time).first.time.strftime("%Y-%m-%d") %>/<%= Time.now.strftime("%Y-%m-%d") %>">All Time</a>
+                          </li>
+                        </ul>
+                      </li>
+                    <% end %>
+                  <% end %>
+                  <li class="dropdown">
+                      <a href="/accounts/<%= session[:account_id] %>">Account</a>
+                  </li>
+                  <% if current_user.account_ids.length > 1 %>
+                    <li class="dropdown">
+                        <a href="/login/<%= session[:user_id] %>/account_select">Switch Accounts</a>
+                    </li>
+                  <% end %>
+                  <li class="dropdown">
+                      <a href="/logout">Logout</a>
+                  </li>
+                <% else %>
+                  <li class="dropdown">
+                      <a href="/">Login</a>
+                  </li>
+                <% end %>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <h1>Bot Analyzer</h1>
+        <%= yield %>
+      </div>
+    </body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-80811547-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</html>

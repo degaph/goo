@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-md-12">
+    <h2>Account management for <%= @account.account_name %></h2>
+  </div>
+  <% if @warning %>
+  <div class="col-md-12 danger">
+    <%= @warning %>
+  </div>
+  <% end %>
+  <div class="col-md-12 danger">
+    <h4>Edit Account</h4>
+    <form action="/accounts/<%= @account.id %>/update_user" method="post">
+      E-mail: <input type="text" class="form-control" id="email" size="60" name="email" value="<%= current_user.email %>">
+      First Name: <input type="text" class="form-control" id="first_name" size="60" name="first_name" value="<%= current_user.first_name %>">
+      Last Name: <input type="text" class="form-control" id="last_name" size="60" name="last_name" value="<%= current_user.last_name %>">
+      <input type="hidden" class="form-control" id="account_id" name="account_id" value="<%= @account.id %>">
+      <input type="hidden" class="form-control" id="user_id" name="user_id" value="<%= current_user.id %>">
+      <button type="submit" class="btn btn-primary">Update Account</button>      
+    </form>    
+  </div>
+  <% if current_user.is_admin(@account.id) %>
+  <div class="col-md-12">
+    <h4>Add a new user to this account</h4>
+    <form action="/accounts/<%= @account.id %>/create_user" method="post">
+      E-mail: <input type="text" class="form-control" id="email" size="60" name="email">
+      First Name: <input type="text" class="form-control" id="first_name" size="60" name="first_name">
+      Last Name: <input type="text" class="form-control" id="last_name" size="60" name="last_name">
+      <label>
+        <input type="checkbox" class="platform_check" id="admin" name="admin" value="admin"> Adminstrator?
+      </label>
+      <br />
+      <input type="hidden" class="form-control" id="account_id" name="account_id" value="<%= @account.id %>">
+      <button type="submit" class="btn btn-primary">Create Account</button>      
+    </form>
+  </div>
+  <div class="col-md-12">
+    <h4>Users</h4>
+    <table class="table">
+      <tr>
+        <th>E-mail</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Admin?</th>
+        <th>Actions</th>
+      </tr>
+      <% @account.users.each do |user| %>
+        <tr>
+          <th><a href="mailto:<%= user.email %>"><%= user.email %></a></th>
+          <th><%= user.first_name %></th>
+          <th><%= user.last_name %></th>
+          <th><%= user.is_admin(@account.id) == true ? "Yes" : "No" %></th>
+          <% if current_user.id == user.id %>
+            <th><a href="/users/<%= user.id %>/reset_password_submit/<%= @account.id %>">Reset Password</a> | <a href="/accounts/<%= @account.id %>/drop_user/<%= user.id %>">Delete Account</a></th>
+          <% elsif (user.is_admin(@account.id) && current_user.is_admin(@account.id) && current_user.id != user.id) %>
+            <th><a href="/users/<%= user.id %>/reset_password_submit/<%= @account.id %>">Reset Password</a></th>
+          <% else %>
+            <th><a href="/users/<%= user.id %>/reset_password_submit/<%= @account.id %>">Reset Password</a> | <a href="/accounts/<%= @account.id %>/drop_user/<%= user.id %>">Delete Account</a></th>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,78 @@
+<% selector = "##{name}"%>
+<style>
+#<%= name %> text{
+  display: none;
+}
+</style>
+<script>
+function draw_<%= name %>(){
+  $("<%= selector %>").height(300)
+  var margin = {top: 40, right: 20, bottom: 30, left: 40},
+      width = $("<%= selector %>").width() - margin.left - margin.right,
+      height = $("<%= selector %>").height() - margin.top - margin.bottom;
+
+  var formatPercent = d3.format(".0%");
+
+  var x = d3.scale.ordinal()
+      .rangeRoundBands([0, width], .1);
+
+  var y = d3.scale.linear()
+      .range([height, 0]);
+
+  var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom");
+
+  var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left")
+      .tickFormat(formatPercent);
+
+  var tip_<%= name %> = d3.tip()
+    .attr('class', 'd3-tip')
+    .offset([-10, 0])
+    .html(function(d) {
+      return "<strong>Item:</strong> <span style='color:red'>\"" + d.name + "\"</span><br/><br/><strong>Percent:</strong> <span style='color:red'>" + Math.round(d.frequency*10000)/100 + "%</span>";
+    })
+
+  var svg_<%= name %> = d3.select("<%= selector %>").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  svg_<%= name %>.call(tip_<%= name %>);
+  var raw_data_<%= name %> = <%= data %>
+  var data_<%= name %> = []
+  for (i = 0; i < raw_data_<%= name %>.length; i++){
+    data_<%= name %>.push({name: raw_data_<%= name %>[i][0], frequency: raw_data_<%= name %>[i][1]})
+  }
+  x.domain(data_<%= name %>.map(function(d) { return d.name; }));
+  y.domain([0, 1]);
+
+  svg_<%= name %>.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg_<%= name %>.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+
+  svg_<%= name %>.selectAll(".bar")
+      .data(data_<%= name %>)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.name); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.frequency); })
+      .attr("height", function(d) { return height - y(d.frequency); })
+      .on('mouseover', tip_<%= name %>.show)
+      .on('mouseout', tip_<%= name %>.hide)
+
+  function type(d) {
+    d.frequency = +d.frequency;
+    return d;
+  }
+}
+</script>

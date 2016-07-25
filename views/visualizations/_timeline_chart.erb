@@ -1,0 +1,22 @@
+<script>
+$("#<%= name %>").append('<div class="d3timeline" id="<%= name %>_chart"></div>')
+
+$.get("<%= url %>", function( data ) {
+  data = JSON.parse(data)
+  var chart = c3.generate({
+      bindto: '#<%= name %>_chart',
+      data: {
+          x: 'x',
+          columns: data
+      },
+      axis: {
+          x: {
+              type: 'timeseries',
+              tick: {
+                  format: '%Y-%m-%d'
+              }
+          }
+      }
+  });
+});
+</script>

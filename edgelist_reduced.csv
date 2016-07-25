@@ -1,0 +1,1341 @@
+source,target
+fuzzybot do first message,fuzzybot do onboarding ask user location
+fuzzybot do is a *,fuzzybot do onboarding ask user location
+fuzzybot do onboarding ask user location,fuzzybot do onboarding complete *
+fuzzybot do is a [*] @yes [*],fuzzybot do onboarding complete *
+fuzzybot do is a *,fuzzybot do onboarding complete *
+fuzzybot do save location *,fuzzybot do onboarding complete *
+fuzzybot do is a *,fuzzybot do first message
+fuzzybot do is a *,fuzzybot do save location *
+(@sureyes),fuzzybot do lang en wildcard{weight=1}
+fuzzybot do first message,fuzzybot do onboarding complete *
+[*] weathercat [*],fuzzybot do onboarding complete *
+fuzzybot do is a *,fuzzybot do daily update eval preference *
+fuzzybot do onboarding complete *,fuzzybot do daily update 1
+fuzzybot do daily update 2 continue,fuzzybot do daily update eval preference *
+fuzzybot do is a *,fuzzybot do is a *
+fuzzybot do is a *,fuzzybot do weather error *{weight=100}
+fuzzybot do save location *,fuzzybot do daily update 1
+fuzzybot do is a *,fuzzybot do daily update 2 continue
+fuzzybot do save location *,[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do is a *,[*] (@badwordsinsults) [*]
+fuzzybot do save location *,fuzzybot do daily update eval preference *
+fuzzybot do save location *,fuzzybot do onboarding ask user location
+fuzzybot do save location *,fuzzybot do save location *
+[*] weathercat [*],fuzzybot do onboarding ask user location
+fuzzybot do save location *,[*] (@whatrequest) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+fuzzybot do weather error *{weight=100},fuzzybot do onboarding complete *
+fuzzybot do save location *,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @yes [*],fuzzybot do save location *
+fuzzybot do is a *,fuzzybot do is a [*] @yes [*]
+*,fuzzybot do is a *
+fuzzybot do lang en wildcard{weight=1},[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do is a *,fuzzybot do is a [*] @sure [*]
+fuzzybot do save location *,fuzzybot do weather error *{weight=100}
+fuzzybot do lang en wildcard{weight=1},fuzzybot do weather error *{weight=100}
+fuzzybot do first message,fuzzybot do make nice username{weight=1000}
+fuzzybot do is a [*] @sure [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @yes [*],fuzzybot do daily update eval preference *
+ugh,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a *,fuzzybot do daily update 1
+fuzzybot do first message,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do lang en wildcard{weight=1},fuzzybot do lang en wildcard{weight=1}
+[*] who made you [*],fuzzybot do lang en wildcard{weight=1}
+(@poncho),fuzzybot do lang en wildcard{weight=1}
+fuzzybot do lang en wildcard{weight=1},[*] (@whatrequest) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+fuzzybot do hunger topic,fuzzybot do lang en wildcard{weight=1}
+(great|cool|awesome|ok|okay),fuzzybot do lang en wildcard{weight=1}
+[*] (@hello) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do save location *,fuzzybot do daily update 2 continue
+*,fuzzybot do first message
+fuzzybot do is a *,(@sureyes)
+*{weight=100},*{weight=100}
+fuzzybot do save location *,(@sureyes)
+(@sureyes),(@sureyes)
+*,*
+*,[*] (how are you|how're you|howre you) [*]
+*,more info
+fuzzybot do wildcard *{weight=1},*{weight=1}
+date me [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do daily update eval preference *,fuzzybot do onboarding complete *
+[*] what [are] (u|you) (up to|doing) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a *,[*] weathercat [*]
+fuzzybot do first message,fuzzybot do save location *
+fuzzybot do is a [*] @sure [*],fuzzybot do first message
+fuzzybot do is a [*] @no [*],fuzzybot do is a *
+fuzzybot do is a [*] @yes [*],fuzzybot do is a [*] @sure [*]
+fuzzybot do first message,[*] weathercat [*]
+fuzzybot do lang en wildcard{weight=1},fuzzybot do onboarding ask user location
+fuzzybot do is a [*] @sure [*],fuzzybot do onboarding complete *
+fuzzybot do lang en wildcard{weight=1},fuzzybot do onboarding complete *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do onboarding complete *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10}
+fuzzybot do save location *{weight=100},fuzzybot do weather in * with facebook buttons{weight=100}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do lang en wildcard{weight=1}
+*,fuzzybot do is a [*] @yes [*]
+fuzzybot do is a [*] @yes [*],(@sureyes)
+*,fuzzybot do save location *
+(@sureyes),fuzzybot do make nice username{weight=1000}
+fuzzybot do is a [*] @sure [*],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@whatrequest) [*] (weather|temp|temperature) [@nearplace] *{weight=5},[*] (@whatrequest) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+fuzzybot do lang en wildcard{weight=1},* (weather|temp|temperature){weight=5}
+fuzzybot do is a *,fuzzybot do lang en wildcard{weight=1}
+[*] (purr|puurr|meow|roar|mew) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do weather error *{weight=100},[*] (@whatrequest) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},(great|cool|awesome|ok|okay)
+(@sureyes),fuzzybot do onboarding complete *
+fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000},fuzzybot do lang en wildcard{weight=1}
+(great|cool|awesome|ok|okay),fuzzybot do weather error *{weight=100}
+[*] (@hello) [*],fuzzybot do weather error *{weight=100}
+[*] (@hello) [*],fuzzybot do onboarding ask user location
+fuzzybot do onboarding ask user location,fuzzybot do weather error *{weight=100}
+fuzzybot do weather error *{weight=100},fuzzybot do weather error *{weight=100}
+fuzzybot do weather error *{weight=100},[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+(5day|5 day|5-day) forecast{weight=100},(5day|5 day|5-day) forecast{weight=100}
+(5day|5 day|5-day) forecast{weight=100},fuzzybot do weather in * with facebook buttons{weight=100}
+(shut up|shutup|quiet|hush),fuzzybot do lang en wildcard{weight=1}
+fuzzybot do lang unknown wildcard{weight=1},fuzzybot do lang unknown wildcard{weight=1}
+fuzzybot do save location *,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do lang en wildcard{weight=1}
+(@sureyes),fuzzybot do weather error *{weight=100}
+fuzzybot do first message,fuzzybot do weather error *{weight=100}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do save location *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do is a *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do save location *
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do weather error *{weight=100}
+fuzzybot do lang unknown wildcard{weight=1},fuzzybot do weather error *{weight=100}
+[*] (@forecast) [@nearplace] *{weight=5},fuzzybot do weather error *{weight=100}
+fuzzybot do daily update eval preference *,fuzzybot do daily update 1
+fuzzybot do lang en wildcard{weight=1},[*] (@whatrequest) [*] (weather|temp|temperature) [*] (@tomorrowterms){weight=5}
+fuzzybot do is a [*] @sure [*],fuzzybot do save location *
+(5day|5 day|5-day) forecast{weight=100},fuzzybot do weather error *{weight=100}
+fuzzybot do is a [*] @yes [*],fuzzybot do weather error *{weight=100}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do is a *
+*,fuzzybot do onboarding ask user location
+[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5},* (weather|temp|temperature){weight=5}
+[*] (@whatrequest) [*] (weather|temp|temperature) [*] (@tomorrowterms){weight=5},[*] (@whatrequest) [*] (weather|temp|temperature) [*] (@tomorrowterms){weight=5}
+[*] (@whatrequest) [*] (@forecast) [@nearplace] *{weight=5},fuzzybot do weather error *{weight=100}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do onboarding complete *
+(@forecast){weight=5},fuzzybot do weather error *{weight=100}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do weather error *{weight=100}
+fuzzybot do onboarding complete *,[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do is a [*] @yes [*],fuzzybot do is a [*] @yes [*]
+fuzzybot do is a *,[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+(@forecast){weight=5},(5day|5 day|5-day) forecast{weight=100}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*]
+fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a *,[*] (purr|puurr|meow|roar|mew) [*]
+fuzzybot do save location *,(great|cool|awesome|ok|okay)
+fuzzybot do lang en wildcard{weight=1},fuzzybot do daily update 1
+[*] (purr|puurr|meow|roar|mew) [*],fuzzybot do weather error *{weight=100}
+[*] [current] location,fuzzybot do is a *
+* (live|reside|sleep) [at|in|near|on] *,fuzzybot do is a *
+fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*],fuzzybot do onboarding complete *
+[*] where [are] you [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a *,(great|cool|awesome|ok|okay)
+*,[*] do you (like|love) me [*]
+*,[*] (@badwordsinsults) [*]
+(@no),(@sureyes)
+fuzzybot do is a *,fuzzybot do is a [*] @naughty [*]
+fuzzybot do notification change and *,fuzzybot do weather error *{weight=100}
+fuzzybot do is a [*] @yes [*],(great|cool|awesome|ok|okay)
+fuzzybot do is a *,*{weight=100}
+fuzzybot do first message,[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do lang en wildcard{weight=1},*{weight=100}
+fuzzybot do onboarding ask user location,fuzzybot do daily update 2 continue
+(great|cool|awesome|ok|okay),fuzzybot do onboarding complete *
+fuzzybot do first message,fuzzybot do daily update 2 continue
+* (live|reside|sleep) [at|in|near|on] *,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @sure [*],(great|cool|awesome|ok|okay)
+fuzzybot do daily update 2 continue,fuzzybot do daily update 1
+fuzzybot do is a [*] @no [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @no [*],fuzzybot do onboarding complete *
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do weather error *{weight=100}
+fuzzybot do daily update 2 continue,fuzzybot do onboarding complete *
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @sure [*],fuzzybot do onboarding ask user location
+fuzzybot do condition error [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do first message,fuzzybot do daily update 1
+fuzzybot do is a [*] @no [*],fuzzybot do onboarding ask user location
+fuzzybot do save location *,[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+fuzzybot do onboarding ask user location,fuzzybot do daily update 1
+[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5},[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do is a *,(@no)
+fuzzybot do is a *,[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+fuzzybot do save location *,[*] (@goodbye) [*]{weight=1}
+[*] (@goodbye) [*]{weight=1},[*] weathercat [*]
+[*] (@goodbye) [*]{weight=1},fuzzybot do lang en wildcard{weight=1}
+[*] (@hello) [*],fuzzybot do hunger topic
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do onboarding complete *
+fuzzybot do is a [*] (turn off|off|stop|delete|remove|rm|end|del|unsub|unsubscribe) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do lang en wildcard{weight=1},[*] weathercat [*]
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do is a [*] (turn off|off|stop|delete|remove|rm|end|del|unsub|unsubscribe) [*]
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+[*] (@badwordsinsults) [*],fuzzybot do weather error *{weight=100}
+[*] (@badwordsinsults) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a *,[@todayterms] (weather|temp|temperature) [@todayterms]{weight=5}
+fuzzybot do first message,[*] (@goodbye) [*]{weight=1}
+fuzzybot do is a [*] (turn off|off|stop|delete|remove|rm|end|del|unsub|unsubscribe) [*],fuzzybot do notification change and *
+fuzzybot do save location *,(what|really)
+fuzzybot do save location *,*{weight=100}
+fuzzybot do save location *,(@no)
+[*] (@outlook) [@nearplace] *{weight=5},fuzzybot do weather error *{weight=100}
+(@sureyes),fuzzybot do onboarding ask user location
+fuzzybot do weather convert temp{weight=100},[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+(@forecast){weight=5},fuzzybot do lang en wildcard{weight=1}
+(@sureyes),[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do make nice username{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @yes [*],fuzzybot do lang en wildcard{weight=1}
+(what|really),fuzzybot do lang en wildcard{weight=1}
+(@sureyes),[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do save location *,[*] weathercat [*]
+[*] weathercat [*],fuzzybot do weather error *{weight=100}
+fuzzybot do is a *,[*] (@whatrequest) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5},[*] (@whatrequest) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+hourly forecast{weight=100},(@sureyes)
+fuzzybot do is a *,fuzzybot do make nice username{weight=1000}
+fuzzybot do notification change and *,(great|cool|awesome|ok|okay)
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do is a [*] @yes [*],[*] weathercat [*]
+(great|cool|awesome|ok|okay),fuzzybot do weather convert temp{weight=100}
+fuzzybot do first message,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(what are|when) [*] (@notificationsword){weight=10},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(what|really),fuzzybot do weather error *{weight=100}
+(great|cool|awesome|ok|okay),[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(@no),(@no)
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do onboarding complete *
+fuzzybot do first message,(@sureyes)
+fuzzybot do is a *,fuzzybot do ignore banned
+fuzzybot do ignore banned,fuzzybot do lang en wildcard{weight=1}
+[*] i (like|love) (u|you|me|us) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do lang en wildcard{weight=1},fuzzybot do help
+[*] (hm|hmm|hrm|hrmm|hmmm) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do daily update 2 continue,fuzzybot do weather error *{weight=100}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do save location *
+* (live|reside|sleep) [at|in|near|on] *,fuzzybot do weather error *{weight=100}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20}
+fuzzybot do save location *,[*] (@hello) [*]
+fuzzybot do weather error *{weight=100},fuzzybot do daily update 1
+fuzzybot do weather convert temp{weight=100},fuzzybot do weather error *{weight=100}
+[*] (@goodbye) [*]{weight=1},fuzzybot do weather error *{weight=100}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do save location *
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do lang unknown wildcard{weight=1}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+fuzzybot do weather error *{weight=100},(weather|temp|temperature) (@tomorrowterms) [@hereterms]{weight=5}
+[*] (@badwordsmiddleschool) [*],fuzzybot do lang en wildcard{weight=1}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@badwordsinsults) [*]
+fuzzybot do is a [*] @yes [*],fuzzybot do onboarding ask user location
+(@no),fuzzybot do weather error *{weight=100}
+fuzzybot do weather convert temp{weight=100},fuzzybot do onboarding complete *
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do lang en wildcard{weight=1}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do onboarding complete *
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do is a *
+fuzzybot do save location *,[*] (@whatrequest) [*] (weather|temp|temperature) [*] (@tomorrowterms){weight=5}
+*,fuzzybot do weather error *{weight=100}
+hourly forecast{weight=100},fuzzybot do first message
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (purr|puurr|meow|roar|mew) [*]
+fuzzybot do weather error *{weight=100},fuzzybot do weather in * with facebook buttons{weight=100}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do first message
+*,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do daily update eval preference *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do daily update 2 continue
+fuzzybot do first message,fuzzybot do daily update eval preference *
+fuzzybot do onboarding ask user location,fuzzybot do daily update eval preference *
+hourly forecast{weight=100},fuzzybot do weather error *{weight=100}
+hourly forecast{weight=100},* (@forecast){weight=5}
+fuzzybot do is a [*] @no [*],fuzzybot do save location *
+hourly forecast{weight=100},fuzzybot do onboarding complete *
+[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*],fuzzybot do lang en wildcard{weight=1}
+hourly forecast{weight=100},[*] (@forecast) [@nearplace] *{weight=5}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do lang en wildcard{weight=1}
+(what are|when) [*] (@notificationsword){weight=10},(what are|when) [*] (@notificationsword){weight=10}
+fuzzybot do lang en wildcard{weight=1},fuzzybot do daily update eval preference *
+fuzzybot do notification change and *,fuzzybot do notification change and *
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do notification change and *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do lang en wildcard{weight=1},(weather|temp|temperature) (@tomorrowterms) [@hereterms]{weight=5}
+fuzzybot do lang en wildcard{weight=1},(5day|5 day|5-day) forecast{weight=100}
+hourly forecast{weight=100},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do first message,[*] (@hello) [*]
+[*] (@forecast) [@nearplace] *{weight=5},fuzzybot do lang en wildcard{weight=1}
+[*] (@hello) [*],(what|really)
+fuzzybot do hahaha,fuzzybot do lang en wildcard{weight=1}
+(great|cool|awesome|ok|okay),fuzzybot do onboarding ask user location
+fuzzybot do save location *,fuzzybot do weather convert temp{weight=100}
+fuzzybot do you full,fuzzybot do you full
+food mouth now,fuzzybot do you full
+fuzzybot do first message,(great|cool|awesome|ok|okay)
+(@forecast){weight=5},(@forecast){weight=5}
+fuzzybot do daily update eval preference *,fuzzybot do weather error *{weight=100}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+[*] (purr|puurr|meow|roar|mew) [*],fuzzybot do weather convert temp{weight=100}
+fuzzybot do is a *,fuzzybot do weather convert temp{weight=100}
+fuzzybot do lang en wildcard{weight=1},fuzzybot do weather convert temp{weight=100}
+(@hourlyforecast){weight=5},(@hourlyforecast){weight=5}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do daily update 1
+got anything else,fuzzybot do you full
+(@hourlyforecast){weight=5},fuzzybot do weather convert temp{weight=100}
+[*] (purr|puurr|meow|roar|mew) [*],fuzzybot do make nice username{weight=1000}
+(@bye),fuzzybot do lang en wildcard{weight=1}
+(@no),fuzzybot do lang en wildcard{weight=1}
+[*] sorry [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do you full,fuzzybot do lang en wildcard{weight=1}
+[*] (purr|puurr|meow|roar|mew) [*],[*] (purr|puurr|meow|roar|mew) [*]
+(great|cool|awesome|ok|okay),(@sureyes)
+*,fuzzybot do lang en wildcard{weight=1}
+*,[*] i do not know [*]
+(what|really),(what|really)
+5-day forecast,more info
+more info,more info
+forecast,more info
+more info,(@sureyes)
+(@bye),(@bye)
+*,(@sureyes)
+*,@sureyes{weight=2}
+more info,fuzzybot do is a *{weight=1000}
+fuzzybot do help{weight=1000},@sureyes{weight=2}
+fuzzybot do first message,more info
+more info,@sureyes{weight=2}
+i like music,*
+[*] (@badwordsinsults) [*],yes
+(@sureyes),(what|really)
+*,fuzzybot do hahaha
+@sureyes{weight=2},@sureyes{weight=2}
+(@sureyes),fuzzybot do wildcard *{weight=1}
+fuzzybot do location was saved,*{weight=1}
+fuzzybot do ignore banned,yes
+fuzzybot do is a *,[*] (@whatrequest) [*] (weather|temp|temperature) [@todayterms]{weight=5}
+[*] what [are] (u|you) (up to|doing) [*],fuzzybot do make nice username{weight=1000}
+date me [*],fuzzybot do make nice username{weight=1000}
+i am starving,fuzzybot do lang en wildcard{weight=1}
+i am starving,i want that recipe
+(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat),fuzzybot do hunger topic
+food mouth now,fuzzybot do lang en wildcard{weight=1}
+*,i am starving
+*,fuzzybot do make nice username{weight=1000}
+(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat),fuzzybot do lang en wildcard{weight=1}
+(@sureyes),[*] (@badwordsinsults) [*]
+i am starving,heck yes
+fuzzybot do make nice username{weight=1000},[*] (@badwordsinsults) [*]
+fuzzybot do lang en wildcard{weight=1},[*] (@whatrequest) [*] (weather|temp|temperature) [@todayterms]{weight=5}
+[*] (@hello) [*],fuzzybot do make nice username{weight=1000}
+fuzzybot do save location *,[*] (@badwordsinsults) [*]
+fuzzybot do lang en wildcard{weight=1},yeah i am sorry
+i am starving,(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat)
+*,yes
+[*] (@hello) [*],[*] (@hello) [*]
+[*] (@zuck) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @yes [*],fuzzybot do daily update 1
+[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*],[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+@no,fuzzybot do lang en wildcard{weight=1}
+*,(what|really)
+[*] (purr|puurr|meow|roar|mew) [*],(@bye)
+fuzzybot do pollen high,fuzzybot do lang en wildcard{weight=1}
+*,fuzzybot do ignore banned
+tell me a [funny] joke,fuzzybot do lang en wildcard{weight=1}
+*,-redirect are you sorry
+*,nope
+fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000},fuzzybot do lang en wildcard{weight=1}
+[*] (purr|puurr|meow|roar|mew) [*],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do daily update 1,fuzzybot do daily update 1
+fuzzybot do is a *,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do is a [*] @yes [*],fuzzybot do first message
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do daily update 1
+fuzzybot do is a *{weight=1000},fuzzybot do weather error *{weight=100}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] weathercat [*]
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do is a *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do onboarding ask user location
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+fuzzybot do is a [*] @yes [*]{weight=1000},fuzzybot do lang en wildcard{weight=1}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (purr|puurr|meow|roar|mew) [*]
+fuzzybot do is a *,[*] (@goodbye) [*]{weight=1}
+fuzzybot do make nice username{weight=1000},fuzzybot do onboarding ask user location
+fuzzybot do lang en wildcard{weight=1},[*] (@tomorrowterms) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+(great|cool|awesome|ok|okay),[*] (@goodbye) [*]{weight=1}
+[*] (@goodbye) [*]{weight=1},(@sureyes)
+[*] (@goodbye) [*]{weight=1},[*] (@goodbye) [*]{weight=1}
+*,[*] (@goodbye) [*]{weight=1}
+[*] are you [a] (man|woman|boy|girl|gurl|dude) [*],fuzzybot do lang en wildcard{weight=1}
+(great|cool|awesome|ok|okay),[*] (@badwordsinsults) [*]
+*,(great|cool|awesome|ok|okay)
+fuzzybot do pollen high,[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+fuzzybot do lang en wildcard{weight=1},fuzzybot do weather in * with facebook buttons{weight=100}
+(@no),fuzzybot do weather convert temp{weight=100}
+fuzzybot do is a [*] @sure [*],fuzzybot do daily update 2 continue
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do weather convert temp{weight=100}
+[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*],fuzzybot do weather convert temp{weight=100}
+*,fuzzybot do onboarding complete *
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do is a [*] @cancel [*]
+fuzzybot do is a *,[*] (@hello) [*]
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@goodbye) [*]{weight=1}
+tell me a [funny] joke,fuzzybot do weather in * with facebook buttons{weight=100}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do is a *{weight=1000}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},(@bye)
+(what are|when) [*] (@notificationsword){weight=10},[*] (@hello) [*]
+fuzzybot do weather in * with facebook buttons{weight=100},fuzzybot do weather in * with facebook buttons{weight=100}
+fuzzybot do lang en wildcard{weight=1},(current time|what time is it)
+(@outlook){weight=5},fuzzybot do lang en wildcard{weight=1}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do weather error *{weight=100}
+hourly forecast{weight=100},hourly forecast{weight=100}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do is a [*] @yes [*]
+[*] (@whatrequest) [*] (weather|temp|temperature) [@todayterms]{weight=5},[*] (@whatrequest) [*] (weather|temp|temperature) [@todayterms]{weight=5}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do daily update eval preference *
+fuzzybot do is a [*] @sure [*],[*] weathercat [*]
+(@bye),fuzzybot do weather error *{weight=100}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do weather convert temp{weight=100}
+fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*],fuzzybot do notification change and *
+fuzzybot do first message,fuzzybot do weather convert temp{weight=100}
+[*] (@whatrequest) [*] (@forecast){weight=5},(5day|5 day|5-day) forecast{weight=100}
+fuzzybot do weather convert temp{weight=100},fuzzybot do weather convert temp{weight=100}
+* (@forecast){weight=5},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do save location *,[*] (purr|puurr|meow|roar|mew) [*]
+[*] what is your name [*],fuzzybot do lang en wildcard{weight=1}
+*,[*] i (like|love) (u|you|me|us) [*]
+[*] i (like|love) (u|you|me|us) [*],fuzzybot do weather error *{weight=100}
+[*] weathercat [*],fuzzybot do daily update eval preference *
+fuzzybot do make nice username{weight=1000},fuzzybot do onboarding complete *
+[*] (@whatrequest) [*] (@forecast){weight=5},[*] (@whatrequest) [*] (@forecast){weight=5}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do is a [*] @cancel [*]{weight=1000}
+fuzzybot do make nice username{weight=1000},fuzzybot do weather error *{weight=100}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do is a [*] @cancel [*]{weight=1000}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@whatrequest) [*] (weather|temp|temperature) [@todayterms]{weight=5}
+[*] (horoscope|astrology|astrological) [*],fuzzybot do lang en wildcard{weight=1}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do weather error *{weight=100}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},(great|cool|awesome|ok|okay)
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do onboarding ask user location
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+fuzzybot do is a [*] @sure [*],fuzzybot do daily update 1
+(who|what) are you,fuzzybot do lang en wildcard{weight=1}
+[*] (@forecast) [@nearplace] *{weight=5},(great|cool|awesome|ok|okay)
+(who|what) are you,fuzzybot do weather error *{weight=100}
+[*] (@goodbye) [*]{weight=1},[*] (purr|puurr|meow|roar|mew) [*]
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},(@sureyes)
+(will|is) [*] (@allweatherterms) [*] (@dayabbvterms) [day]{weight=30},fuzzybot do lang en wildcard{weight=1}
+[*] (@goodbye) [*]{weight=1},fuzzybot do weather convert temp{weight=100}
+(@sureyes),[*] (purr|puurr|meow|roar|mew) [*]
+[*] (@hello) [*],(@sureyes)
+tell me a [funny] joke,fuzzybot do weather error *{weight=100}
+(@sureyes),fuzzybot do weather convert temp{weight=100}
+fuzzybot do onboarding complete *,fuzzybot do weather in * with facebook buttons{weight=100}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+(will|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},fuzzybot do lang en wildcard{weight=1}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do is a [*] @sure [*]
+[*] [current] location,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do pollen high,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] where do you live [*],fuzzybot do lang en wildcard{weight=1}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do make nice username{weight=1000}
+[*] wtf [*],fuzzybot do lang en wildcard{weight=1}
+(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat),i want that recipe
+hourly forecast{weight=100},(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do make nice username{weight=1000}
+hourly forecast{weight=100},fuzzybot do weather convert temp{weight=100}
+hourly forecast{weight=100},(@forecast){weight=5}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+[*] (purr|puurr|meow|roar|mew) [*],fuzzybot do onboarding complete *
+[*] (@goodbye) [*]{weight=1},[*] what [are] (u|you) (up to|doing) [*]
+[*] how old are you [*],fuzzybot do lang en wildcard{weight=1}
+[*] (@hello) [*],[*] (@goodbye) [*]{weight=1}
+[*] what [are] (u|you) (up to|doing) [*],fuzzybot do weather error *{weight=100}
+[*] i do not know [*],[*] i do not know [*]
+[*] (capricorn|cap) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @yes [*]{weight=1000},fuzzybot do weather error *{weight=100}
+fuzzybot do lang en wildcard{weight=1},-redirect are you sorry
+hourly forecast{weight=100},fuzzybot do make nice username{weight=1000}
+(@sureyes),[*] (@badwordsmiddleschool) [*]
+(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat),fuzzybot do make nice username{weight=1000}
+fuzzybot do make nice username{weight=1000},i want that recipe
+fuzzybot do make nice username{weight=1000},fuzzybot do make nice username{weight=1000}
+heck yes,fuzzybot do make nice username{weight=1000}
+[*] (@whatrequest) [*] (@forecast){weight=5},fuzzybot do weather error *{weight=100}
+[i am watching|i watch|im watching|i'm in to|i'm into|im into|im in to] *,fuzzybot do lang en wildcard{weight=1}
+tell me a [funny] joke,(5day|5 day|5-day) forecast{weight=100}
+[*] (@goodbye) [*]{weight=1},(@bye)
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do weather convert temp{weight=100}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],[*] (@badwordsinsults) [*]
+[*] weathercat [*],fuzzybot do daily update 1
+fuzzybot do weather error *{weight=100},[*] (@whatrequest) [*] (weather|temp|temperature) [@todayterms]{weight=5}
+[*] (purr|puurr|meow|roar|mew) [*],[*] (@badwordsinsults) [*]
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},(weather|temp|temperature) (@tomorrowterms) [@hereterms]{weight=5}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(@allweatherterms) [*] [@nearplace] *{weight=20},fuzzybot do lang en wildcard{weight=1}
+[*] (@goodbye) [*]{weight=1},fuzzybot do make nice username{weight=1000}
+fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a *,fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+[*] (i|we|they) (dislike|hate|despise) (you|u) [*],fuzzybot do lang en wildcard{weight=1}
+[*] weathercat [*],fuzzybot do daily update 2 continue
+fuzzybot do lang en wildcard{weight=1},i want that recipe
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do weather convert temp{weight=100}
+fuzzybot do save location *,fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+fuzzybot do save location *,fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000}
+* (@forecast){weight=5},fuzzybot do weather error *{weight=100}
+(@updateword) [*] (location){weight=100},fuzzybot do lang en wildcard{weight=1}
+(@updateword) [*] (location){weight=100},fuzzybot do is a [*] @yes [*]{weight=1000}
+i am starving,fuzzybot do hunger topic
+fuzzybot do is a *,fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000}
+[*] i (like|love) (u|you|me|us) [*],[*] i (like|love) (u|you|me|us) [*]
+fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000},fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000}
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},fuzzybot do weather error *{weight=100}
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},fuzzybot do lang en wildcard{weight=1}
+*,[*] (purr|puurr|meow|roar|mew) [*]
+got anything else,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a *{weight=1000},fuzzybot do lang en wildcard{weight=1}
+*,date me [*]
+*,heck yes
+[i am watching|i watch|im watching|i'm in to|i'm into|im into|im in to] *,heck yes
+[*] (@hello) [*],fuzzybot do onboarding complete *
+[*] i do not know [*],fuzzybot do lang en wildcard{weight=1}
+[*] (@forecast) [@nearplace] *{weight=5},[*] (@forecast) [@nearplace] *{weight=5}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do onboarding ask user location
+hourly forecast{weight=100},[*] (@whatrequest) [*] (@forecast){weight=5}
+hourly forecast{weight=100},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+[*] (purr|puurr|meow|roar|mew) [*],fuzzybot do onboarding ask user location
+meat lovers,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000},fuzzybot do weather error *{weight=100}
+fuzzybot do is a [*] @naughty [*],fuzzybot do onboarding ask user location
+[*] (@hello) [*],fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+[*] (@hourlyforecast) [@nearplace] *{weight=5},hourly forecast{weight=100}
+[*] can you (talk|speak|meow|purr|schnurr|sing) [*],fuzzybot do lang en wildcard{weight=1}
+(@no),[*] (purr|puurr|meow|roar|mew) [*]
+[*] (@goodbye) [*]{weight=1},(@no)
+[*] (@outlook) [@nearplace] *{weight=5},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do onboarding ask user location,fuzzybot do weather convert temp{weight=100}
+[*] i (like|love) (u|you|me|us) [*],(@sureyes)
+i like music,fuzzybot do lang en wildcard{weight=1}
+*,[i am watching|i watch|im watching|i'm in to|i'm into|im into|im in to] *
+[*] i (like|love) (u|you|me|us) [*],fuzzybot do make nice username{weight=1000}
+fuzzybot do notification change and *,fuzzybot do onboarding complete *
+* (live|reside|sleep) [at|in|near|on] *,fuzzybot do save location *
+fuzzybot do first message,fuzzybot do first message
+fuzzybot do lang en wildcard{weight=1},fuzzybot do daily update 2 continue
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@goodbye) [*]{weight=1}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do is a *{weight=1000}
+fuzzybot do is a *{weight=1000},fuzzybot do make nice username{weight=1000}
+i do not want to cook,fuzzybot do lang en wildcard{weight=1}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},[*] (@goodbye) [*]{weight=1}
+[*] (@goodbye) [*]{weight=1},fuzzybot do onboarding complete *
+fuzzybot do save location *,[*] (are you|are you a|are you an) (@dumbwords) [*]
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do make nice username{weight=1000}
+i do not want to cook,i am starving
+[*] (@goodbye) [*]{weight=1},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] do you (like|love) me [*],fuzzybot do lang en wildcard{weight=1}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},[*] (purr|puurr|meow|roar|mew) [*]
+(@poncho),[*] (purr|puurr|meow|roar|mew) [*]
+fuzzybot do is a [*] @cancel [*]{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do lang en wildcard{weight=1},yes
+*,fuzzybot do weather convert temp{weight=100}
+(great|cool|awesome|ok|okay),(great|cool|awesome|ok|okay)
+fuzzybot do is a *,(what|really)
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@badwordsinsults) [*]
+[*] (@badwordsinsults) [*],[*] (@badwordsinsults) [*]
+*,[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10}
+fuzzybot do save location *,fuzzybot do help
+[*] (facebook|instagram) [*],fuzzybot do lang en wildcard{weight=1}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do weather convert temp{weight=100}
+hourly forecast{weight=100},[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20}
+fuzzybot do first message,(@bye)
+(@sureyes),fuzzybot do is a *{weight=1000}
+*,(@no)
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do make nice username{weight=1000}
+[*] (@hello) [*],fuzzybot do weather convert temp{weight=100}
+[*] [referral|referal|refer|promo] (code|codes) [*],fuzzybot do lang en wildcard{weight=1}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@hello) [*]
+[*] (@goodbye) [*]{weight=1},[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+tell me a [funny] joke,tell me a [funny] joke
+[*] (hm|hmm|hrm|hrmm|hmmm) [*],[*] (hm|hmm|hrm|hrmm|hmmm) [*]
+[*] (@forecast) [@nearplace] *{weight=5},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},fuzzybot do save location *
+[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*],fuzzybot do weather error *{weight=100}
+[*] (@hello) [*],[*] (purr|puurr|meow|roar|mew) [*]
+[*] what is your name [*],fuzzybot do weather error *{weight=100}
+fuzzybot do pollen high,fuzzybot do weather convert temp{weight=100}
+fuzzybot do hunger topic,fuzzybot do weather error *{weight=100}
+fuzzybot do save location *,fuzzybot do make nice username{weight=1000}
+[*] (are you|are you a) (@cat) [*],fuzzybot do lang en wildcard{weight=1}
+fuzzybot do onboarding complete *,fuzzybot do onboarding complete *
+[*] (@whatrequest) [*] (@forecast) [@nearplace] *{weight=5},fuzzybot do lang en wildcard{weight=1}
+(@no),fuzzybot do make nice username{weight=1000}
+[*] sorry [*],[*] (@badwordsinsults) [*]
+fuzzybot do is a *,fuzzybot do weather in * with facebook buttons{weight=100}
+(what|really),fuzzybot do make nice username{weight=1000}
+hourly forecast{weight=100},fuzzybot do is a *
+fuzzybot do notification change and *,fuzzybot do lang en wildcard{weight=1}
+[*] (@hello) [*],[*] (@badwordsinsults) [*]
+fuzzybot do is a *,fuzzybot do is a *{weight=1000}
+*,[*] what is up [*]
+*,(who|what) are you
+fuzzybot do you full,fuzzybot do hunger topic
+i am starving,fuzzybot do you full
+(@no),yes
+(@sureyes),[*] (hm|hmm|hrm|hrmm|hmmm) [*]
+*,[*] sorry [*]
+5-day forecast,5-day forecast
+more info,[*] (@hello) [*]
+more info,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do first message,@sureyes{weight=2}
+(@sureyes),@sureyes{weight=2}
+hourly forecast{weight=100},@sureyes{weight=2}
+*,[*] (@exit) [*]
+[*] (@hello) [*],(@no)
+@sureyes{weight=2},@no{weight=2}
+[*] (@hello) [*],fuzzybot do is a *{weight=1000}
+fuzzybot do location was saved,more info
+fuzzybot do help{weight=1000},(@no)
+more info,@no{weight=2}
+*,(@bye)
+(@no),fuzzybot do hahaha
+fuzzybot do location was saved,@sureyes{weight=2}
+*,[*] (@hello) [*]
+more info,fuzzybot do help{weight=1000}
+*,fuzzybot do weather convert temp{weight=1000}
+*,i want that recipe
+fuzzybot do help{weight=1000},[*] (@hello) [*]
+*,fuzzybot do is a *{weight=1000}
+*,fuzzybot do location was saved
+(great|cool|awesome|ok|okay),@sureyes{weight=2}
+i do not want to cook,fuzzybot do you full
+*{weight=1},*{weight=1}
+*,*{weight=1}
+*,fuzzybot do fallback forecast{weight=500}
+*,[*] (@helpword) [*]{weight=200}
+yeah i am sorry,-redirect are you sorry
+fuzzybot do pollen high,fuzzybot do weather error *{weight=100}
+*,(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20}
+(great|cool|awesome|ok|okay),[*] weathercat [*]
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do first message
+-redirect jigglypuff gifs,fuzzybot do lang en wildcard{weight=1}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do lang en wildcard{weight=1}
+i work out a lot,fuzzybot do lang en wildcard{weight=1}
+hourly forecast{weight=100},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@whatrequest) [*] (@forecast){weight=5},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do weather error *{weight=100}
+fuzzybot do notification change and *,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+hourly forecast{weight=100},fuzzybot do notification change and *
+fuzzybot do set firsttime location{weight=200},fuzzybot do lang en wildcard{weight=1}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do weather error *{weight=100}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do is a *
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do lang en wildcard{weight=1}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (@badwordsinsults) [*]
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do weather convert temp{weight=100}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do save location *
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},(great|cool|awesome|ok|okay)
+fuzzybot do make nice username{weight=1000},fuzzybot do weather convert temp{weight=100}
+fuzzybot do hunger topic,i want that recipe
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] (@hello) [*]
+i do not want to cook,fuzzybot do hunger topic
+(great|cool|awesome|ok|okay),[*] (purr|puurr|meow|roar|mew) [*]
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (purr|puurr|meow|roar|mew) [*]
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (@hello) [*]
+fuzzybot do is a *{weight=1000},[*] weathercat [*]
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do lang en wildcard{weight=1}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] (@goodbye) [*]{weight=1}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do make nice username{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do make nice username{weight=1000}
+fuzzybot do is a *{weight=1000},fuzzybot do is a *{weight=1000}
+fuzzybot do set firsttime location{weight=200},fuzzybot do is a *{weight=1000}
+fuzzybot do save location *,fuzzybot do is a *{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (@goodbye) [*]{weight=1}
+fuzzybot do set firsttime location{weight=200},fuzzybot do onboarding complete *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do hahaha
+[*] (purr|puurr|meow|roar|mew) [*],fuzzybot do hahaha
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do first message
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do save location *
+fuzzybot do is a *{weight=1000},fuzzybot do onboarding ask user location
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5}
+fuzzybot do first message,fuzzybot do is a *{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do weather error *{weight=100}
+* (live|reside|sleep) [at|in|near|on] *,fuzzybot do is a *{weight=1000}
+fuzzybot do is a [*] @sure [*]{weight=1000},fuzzybot do is a [*] @sure [*]{weight=1000}
+fuzzybot do is a *{weight=1000},fuzzybot do is a [*] @sure [*]{weight=1000}
+fuzzybot do is a [*] @sure [*]{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @sure [*]{weight=1000},fuzzybot do is a [*] @no [*]{weight=1000}
+fuzzybot do is a *{weight=1000},fuzzybot do is a [*] @no [*]{weight=1000}
+fuzzybot do is a [*] @yes [*],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do weather error *{weight=100},[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+fuzzybot do is a *{weight=1000},fuzzybot do is a [*] @yes [*]{weight=1000}
+fuzzybot do save location continue{weight=200},fuzzybot do is a [*] @yes [*]{weight=1000}
+fuzzybot do save location continue{weight=200},fuzzybot do is a *{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do is a *{weight=1000}
+fuzzybot do save location continue{weight=200},fuzzybot do save location continue{weight=200}
+* (live|reside|sleep) [at|in|near|on] *,fuzzybot do save location continue{weight=200}
+(great|cool|awesome|ok|okay),[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+fuzzybot do is a [*] @yes [*]{weight=1000},fuzzybot do is a [*] @yes [*]{weight=1000}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do is a *{weight=1000}
+[*] good [*],fuzzybot do is a *{weight=1000}
+[*] good [*],fuzzybot do lang en wildcard{weight=1}
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do is a [*] @no [*]{weight=1000},fuzzybot do lang en wildcard{weight=1}
+[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5},[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+fuzzybot do first message,[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+i like music,fuzzybot do make nice username{weight=1000}
+fuzzybot do lang en wildcard{weight=1},[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+[*] (@hello) [*],fuzzybot do hahaha
+fuzzybot do onboarding ask user location,[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+fuzzybot do is a *,[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+fuzzybot do save location *,[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},tell me a [funny] joke
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do is a *{weight=1000}
+fuzzybot do onboarding complete *,[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+fuzzybot do is a [*] @naughty [*],fuzzybot do lang en wildcard{weight=1}
+(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat),fuzzybot do you full
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do is a *
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@whatrequest) [*] (@forecast) [@nearplace] *{weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},(5day|5 day|5-day|five day) forecast{weight=100}
+*,[*] (@badwordsmiddleschool) [*]
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do make nice username{weight=1000}
+* (@weatherword){weight=5},fuzzybot do lang en wildcard{weight=1}
+* (@weatherword){weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+(hair|frizz),fuzzybot do lang en wildcard{weight=1}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+* (@weatherword){weight=5},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],(@bye)
+[*] (@goodbye) [*]{weight=1},[*] what is up [*]
+(@no),[*] what is up [*]
+fuzzybot do make nice username{weight=1000},[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+fuzzybot do is a *,[*] what is up [*]
+[*] (@hello) [*],[*] what is up [*]
+(@sureyes),[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+(@weatherword) (@tomorrowterms) [@hereterms]{weight=5},fuzzybot do lang en wildcard{weight=1}
+(@weatherword) (@tomorrowterms) [@hereterms]{weight=5},(@weatherword) (@tomorrowterms) [@hereterms]{weight=5}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},(great|cool|awesome|ok|okay)
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*],fuzzybot do make nice username{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do onboarding complete *
+[*] what is up [*],fuzzybot do lang en wildcard{weight=1}
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*],fuzzybot do lang en wildcard{weight=1}
+[*] what is up [*],fuzzybot do make nice username{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},(@sureyes)
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*],[*] what is up [*]
+i am starving,[i am watching|i watch|im watching|i'm in to|i'm into|im into|im in to] *
+*,fuzzybot do is a [*] @no [*]{weight=1000}
+*,(@poncho)
+heck yes,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do save location continue{weight=200},fuzzybot do lang en wildcard{weight=1}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do onboarding complete *
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do is a *{weight=1000}
+[*] (@whatrequest) [*] (@forecast){weight=5},fuzzybot do lang en wildcard{weight=1}
+hourly forecast{weight=100},[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+[*] what is up [*],fuzzybot do weather error *{weight=100}
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5},fuzzybot do save location *
+fuzzybot do lang en wildcard{weight=1},[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms) [*] [@nearplace] *{weight=5}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do weather in * with facebook buttons{weight=100}
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (@hello) [*],[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+[*] (@weatherword) [*] (@tomorrowterms) [@nearplace] *{weight=5},fuzzybot do weather error *{weight=100}
+[*] (@weatherword) [*] (@tomorrowterms) [@nearplace] *{weight=5},[*] (@weatherword) [*] (@tomorrowterms) [@nearplace] *{weight=5}
+[*] what is up [*],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5},[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do onboarding ask user location
+(@weatherword) (@tomorrowterms) [@hereterms]{weight=5},fuzzybot do weather convert temp{weight=100}
+(@no),fuzzybot do is a *{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] what is up [*]
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+*,[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000},[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+fuzzybot do set firsttime location{weight=200},[*] (@goodbye) [*]{weight=1}
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5},fuzzybot do weather convert temp{weight=100}
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (good morning) [*],fuzzybot do lang en wildcard{weight=1}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] sorry [*]
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},(@sureyes)
+[*] (@weatherword) [*] (@tomorrowterms) [@nearplace] *{weight=5},fuzzybot do lang en wildcard{weight=1}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] (@badwordsinsults) [*]
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5},fuzzybot do weather error *{weight=100}
+*,[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do is a *
+[*] (@weatherword) [@nearplace] * (@tomorrowterms) [*]{weight=5},fuzzybot do lang en wildcard{weight=1}
+(@forecast){weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do first message
+(5day|5 day|5-day|five day) forecast{weight=100},* (@forecast){weight=5}
+fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000},fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},(@updateword) [*] (location){weight=100}
+(5day|5 day|5-day|five day) forecast{weight=100},(@forecast){weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do save location continue{weight=200}
+(5day|5 day|5-day|five day) forecast{weight=100},hourly forecast{weight=100}
+[*] (@weatherword) [@nearplace] * (@tomorrowterms) [*]{weight=5},[*] (@weatherword) [@nearplace] * (@tomorrowterms) [*]{weight=5}
+* (@weatherword){weight=5},fuzzybot do weather error *{weight=100}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do weather convert temp{weight=100}
+(great|cool|awesome|ok|okay),[*] what is up [*]
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] (@forecast) [@nearplace] *{weight=5}
+(@hourlyforecast){weight=5},fuzzybot do weather error *{weight=100}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do pollen high
+fuzzybot do ignore banned,-redirect are you sorry
+fuzzybot do lang en wildcard{weight=1},nope
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},tell me a [funny] joke
+fuzzybot do notification change and *,fuzzybot do is a [*] @cancel [*]{weight=1000}
+(what are|when) [*] (@notificationsword){weight=10},(@sureyes)
+fuzzybot do is a [*] @cancel [*],fuzzybot do lang en wildcard{weight=1}
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@forecast) [@nearplace] *{weight=5}
+[*] [current] location,fuzzybot do save location continue{weight=200}
+fuzzybot do save location continue{weight=200},fuzzybot do first message
+(@weatherword) (@tomorrowterms) [@hereterms]{weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+(@updateword) [*] (location){weight=100},fuzzybot do save location continue{weight=200}
+(@sureyes),[*] what is up [*]
+fuzzybot do save location continue{weight=200},(great|cool|awesome|ok|okay)
+(great|cool|awesome|ok|okay),fuzzybot do is a *{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (purr|puurr|meow|roar|mew) [*]
+(@forecast){weight=5},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+* (@weatherword){weight=5},* (@weatherword){weight=5}
+(great|cool|awesome|ok|okay),fuzzybot do make nice username{weight=1000}
+[*] (@hello) [*],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+hourly forecast{weight=100},fuzzybot do pollen high
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10}
+got anything else,(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat)
+(5day|5 day|5-day|five day) forecast{weight=100},(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20}
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],(what|really)
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+* (@forecast){weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+(@updateword) [*] (location){weight=100},fuzzybot do is a *{weight=1000}
+(@forecast){weight=5},fuzzybot do pollen high
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@whatrequest) [*] (@forecast){weight=5}
+*,[*] (hm|hmm|hrm|hrmm|hmmm) [*]
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+hourly forecast{weight=100},[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5}
+hourly forecast{weight=100},[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+fuzzybot do save location continue{weight=200},[*] (@hello) [*]
+fuzzybot do save location continue{weight=200},fuzzybot do weather error *{weight=100}
+fuzzybot do save location continue{weight=200},fuzzybot do weather in * with facebook buttons{weight=100}
+got anything else,i do not want to cook
+fuzzybot do save location continue{weight=200},(@sureyes)
+fuzzybot do set firsttime location{weight=200},fuzzybot do save location continue{weight=200}
+fuzzybot do pollen high,(great|cool|awesome|ok|okay)
+hourly forecast{weight=100},(great|cool|awesome|ok|okay)
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@outlook) [@nearplace] *{weight=5}
+[*] (@outlook) [@nearplace] *{weight=5},[*] (@outlook) [@nearplace] *{weight=5}
+(great|cool|awesome|ok|okay),(@no)
+fuzzybot do save location continue{weight=200},fuzzybot do is a *
+fuzzybot do is a *{weight=1000},[*] (@badwordsinsults) [*]
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},* (@weatherword){weight=5}
+fuzzybot do is a *,fuzzybot do notification change and *
+(great|cool|awesome|ok|okay),(what|really)
+(great|cool|awesome|ok|okay),[*] (@hello) [*]
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do onboarding complete *
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},[*] (purr|puurr|meow|roar|mew) [*]
+fuzzybot do notification change and *,fuzzybot do pollen high
+fuzzybot do notification change and *,fuzzybot do is a [*] @cancel [*]
+(5day|5 day|5-day|five day) forecast{weight=100},[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+(@outlook){weight=5},(@outlook){weight=5}
+(what are|when) [*] (@notificationsword){weight=10},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},(great|cool|awesome|ok|okay)
+*,[*] (i|we|they) (dislike|hate|despise) (you|u) [*]
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do hahaha
+(@sureyes),yes
+[*] (@badwordsmiddleschool) [*],[*] (@badwordsinsults) [*]
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},(@no)
+(5day|5 day|5-day|five day) forecast{weight=100},(great|cool|awesome|ok|okay)
+[*] (@outlook) [@nearplace] *{weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms) [*] [@nearplace] *{weight=5}
+[*] (horoscope|astrology|astrological) [*],[*] taurus [*]
+(@weatherword) (@tomorrowterms) [@hereterms]{weight=5},fuzzybot do weather error *{weight=100}
+*,fuzzybot do save location continue{weight=200}
+*,yeah i am sorry
+*,[*] (good morning) [*]
+*,fuzzybot do pollen high
+[*] (@badwordsinsults) [*],@sureyes{weight=2}
+fuzzybot do is a *{weight=1000},@sureyes{weight=2}
+more info,(great|cool|awesome|ok|okay)
+*,fuzzybot do help{weight=1000}
+more info,[*] (@goodbye) [*]{weight=1}
+[*] (@helpword) [*]{weight=200},*{weight=1}
+*,fuzzybot do wildcard *{weight=1}
+i am starving,fuzzybot do make nice username{weight=1000}
+hourly forecast{weight=100},[*] (purr|puurr|meow|roar|mew) [*]
+fuzzybot do is a *{weight=1000},fuzzybot do is a [*] @naughty [*]{weight=1000}
+fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000},fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000}
+fuzzybot do is a *{weight=1000},fuzzybot do is a [*] @cancel [*]{weight=1000}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20}
+[*] i am bored [*],fuzzybot do lang en wildcard{weight=1}
+hourly forecast{weight=100},[*] (@whatrequest) [*] (@forecast) [@nearplace] *{weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@badwordsinsults) [*]
+fuzzybot do pollen high,fuzzybot do pollen high
+fuzzybot do save location continue{weight=200},fuzzybot do weather convert temp{weight=100}
+fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000},fuzzybot do weather error *{weight=100}
+fuzzybot do is a *{weight=1000},fuzzybot do onboarding complete *
+fuzzybot do lang en wildcard{weight=1},[*] (are you|are you a|are you an) (@dumbwords) [*]
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},fuzzybot do weather convert temp{weight=100}
+*,(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat)
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do pollen high
+fuzzybot do is a *,fuzzybot do is a [*] @cancel [*]
+(@hourlyforecast){weight=5},fuzzybot do lang en wildcard{weight=1}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do first message
+*,(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+fuzzybot do is a [*] @cancel [*]{weight=1000},fuzzybot do make nice username{weight=1000}
+fuzzybot do save location continue{weight=200},fuzzybot do make nice username{weight=1000}
+[*] (hm|hmm|hrm|hrmm|hmmm) [*],fuzzybot do make nice username{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},[*] what is up [*]
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do is a [*] @cancel [*]{weight=1000}
+[*] (purr|puurr|meow|roar|mew) [*],fuzzybot do is a *{weight=1000}
+[*] what is your name [*],fuzzybot do make nice username{weight=1000}
+(what are|when) [*] (@notificationsword){weight=10},(great|cool|awesome|ok|okay)
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+[*] (@weatherword) [@nearplace] * (@tomorrowterms) [*]{weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do is a *{weight=1000},fuzzybot do weather convert temp{weight=100}
+(5day|5 day|5-day|five day) forecast{weight=100},(@sureyes)
+(@allweatherterms) [*] [@nearplace] *{weight=20},(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+(pollen|sneeze|allergy|allergies),fuzzybot do lang en wildcard{weight=1}
+[*] (@hello) [*],[*] (are you|are you a|are you an) (@dumbwords) [*]
+hourly forecast{weight=100},fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000}
+[*] (are you|are you a|are you an) (@dumbwords) [*],[*] (are you|are you a|are you an) (@dumbwords) [*]
+[*] (purr|puurr|meow|roar|mew) [*],[*] (are you|are you a|are you an) (@dumbwords) [*]
+[i am watching|i watch|im watching|i'm in to|i'm into|im into|im in to] *,fuzzybot do make nice username{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do hahaha
+*,fuzzybot do is a [*] @cancel [*]{weight=1000}
+fuzzybot do notification change and *,fuzzybot do weather convert temp{weight=100}
+(@weatherword) (@tomorrowterms) [@hereterms]{weight=5},(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do pollen high
+*,[*] (are you|are you a|are you an) (@dumbwords) [*]
+@sureyes,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},(@no)
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do first message
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+[*] (@weatherword) [*] (@tomorrowterms) [@nearplace] *{weight=5},[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+[*] (@weatherword) [*] (@tomorrowterms) [@nearplace] *{weight=5},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+hourly forecast{weight=100},(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20}
+[*] sorry [*],fuzzybot do weather error *{weight=100}
+hourly forecast{weight=100},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do is a [*] @cancel [*]{weight=1000},fuzzybot do weather error *{weight=100}
+fuzzybot do save location continue{weight=200},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do save location continue{weight=200},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+hourly forecast{weight=100},[*] (@hello) [*]
+hourly forecast{weight=100},fuzzybot do is a [*] (turn off|off|stop|delete|remove|rm|end|del|unsub|unsubscribe) [*]
+(what are|when) [*] (@notificationsword){weight=10},hourly forecast{weight=100}
+fuzzybot do is a [*] @no [*]{weight=1000},fuzzybot do is a [*] @no [*]{weight=1000}
+fuzzybot do first message,fuzzybot do is a [*] @no [*]{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},(what are|when) [*] (@notificationsword){weight=10}
+*,(what are|when) [*] (@notificationsword){weight=10}
+(great|cool|awesome|ok|okay),fuzzybot do hahaha
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@hello) [*]
+*,fuzzybot do is a [*] @yes [*]{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [for|like] (@todayterms){weight=6},fuzzybot do lang en wildcard{weight=1}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},fuzzybot do lang en wildcard{weight=1}
+[*] (@whatrequest) [*] (@weatherword) [for|like] (@todayterms){weight=6},[*] (@whatrequest) [*] (@weatherword) [for|like] (@todayterms){weight=6}
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do help{weight=1000}
+fuzzybot do save location *,fuzzybot do help{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6}
+[*] (@whatrequest) [*] (@weatherword) [for|like] (@todayterms){weight=6},fuzzybot do weather error *{weight=100}
+are you [a] fox,fuzzybot do is a *{weight=1000}
+are you [a] fox,fuzzybot do lang en wildcard{weight=1}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do help{weight=1000}
+(@updateword) [*] (location){weight=100},(what are|when) [*] (@notificationsword){weight=10}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},(great|cool|awesome|ok|okay)
+are you [a] fox,fuzzybot do onboarding complete *
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},fuzzybot do make nice username{weight=1000}
+fuzzybot do weather error *{weight=100},fuzzybot do weather buttons in *{weight=101}
+hourly forecast{weight=100},fuzzybot do weather buttons in *{weight=101}
+fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*],fuzzybot do is a *{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},[*] (@hello) [*]
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do weather buttons in *{weight=101}
+*,(5day|5 day|5-day|five day) forecast{weight=100}
+fuzzybot do lang en wildcard{weight=1},fuzzybot do weather buttons in *{weight=101}
+fuzzybot do weather buttons in *{weight=101},fuzzybot do weather buttons in *{weight=101}
+[*] (@whatrequest) [*] (@weatherword) [for|like] (@todayterms){weight=6},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do is a *{weight=1000}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do settings buttons temperature{weight=1000}
+fuzzybot do help{weight=1000},fuzzybot do is a *{weight=1000}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do is a [*] @yes [*]{weight=1000}
+fuzzybot do help{weight=1000},fuzzybot do lang en wildcard{weight=1}
+(@updateword) [*] (location){weight=100},fuzzybot do help{weight=1000}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do save location continue{weight=200}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do is a [*] @cancel [*]
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do notification change and *
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do lang en wildcard{weight=1}
+(what are|when) [*] (@notificationsword){weight=10},(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100}
+[*] (turn off|disable|stop|no more|pause) [*] (@notificationsword) [*]{weight=101},fuzzybot do lang en wildcard{weight=1}
+[*] (@hourlyforecast) [@nearplace] *{weight=5},[*] (@hourlyforecast) [@nearplace] *{weight=5}
+fuzzybot do first message,fuzzybot do is a [*] @yes [*]{weight=1000}
+[*] (turn off|disable|stop|no more|pause) [*] (@notificationsword) [*]{weight=101},fuzzybot do help{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},fuzzybot do is a *{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},fuzzybot do weather convert temp{weight=100}
+fuzzybot do is a [*] @cancel [*],fuzzybot do is a *{weight=1000}
+fuzzybot do first message,fuzzybot do is a [*] @sure [*]{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do is a [*] @yes [*]{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10}
+*,hourly forecast{weight=100}
+(5day|5 day|5-day|five day) forecast{weight=100},(@outlook){weight=5}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do help{weight=1000}
+fuzzybot do notification change and *,fuzzybot do is a *{weight=1000}
+[*] (enable|turn on|start) [*] (@notificationsword) [*]{weight=101},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do save location error{weight=100},fuzzybot do is a *{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5}
+* (@forecast){weight=5},* (@forecast){weight=5}
+fuzzybot do notification change and *,fuzzybot do help{weight=1000}
+fuzzybot do save location continue{weight=200},fuzzybot do notification change and *
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do save location continue{weight=200}
+*,[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6}
+fuzzybot do is a *,fuzzybot do help{weight=1000}
+hourly forecast{weight=100},fuzzybot do help{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},fuzzybot do weather error *{weight=100}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do weather convert temp{weight=100}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do help{weight=1000}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do settings buttons temperature{weight=1000}
+fuzzybot do save location continue{weight=200},fuzzybot do help{weight=1000}
+fuzzybot do help{weight=1000},fuzzybot do make nice username{weight=1000}
+fuzzybot do settings buttons temperature{weight=1000},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+* (@forecast){weight=5},fuzzybot do help{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do is a *{weight=1000}
+set @notificationsword,more info
+fuzzybot do first message,@no{weight=2}
+*,[*] what is your name [*]
+set @notificationsword,@sureyes{weight=2}
+fuzzybot do is a *{weight=1000},@no{weight=2}
+fuzzybot do location was saved,@no{weight=2}
+fuzzybot do help{weight=1000},(what|really)
+fuzzybot do help{weight=1000},(@sureyes)
+[*] (@goodbye) [*]{weight=1},@sureyes{weight=2}
+*,fuzzybot do nlp weather at day #{weight=1000}
+*,[*] (settings|setting|preferences|prefs) [*]
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do help{weight=1000}
+fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*],fuzzybot do help{weight=1000}
+fuzzybot do help{weight=1000},fuzzybot do onboarding complete *
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do notification change and *
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do help{weight=1000}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},hourly forecast{weight=100}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},fuzzybot do help{weight=1000}
+fuzzybot do help{weight=1000},[*] (@badwordsinsults) [*]
+fuzzybot do set firsttime location{weight=200},fuzzybot do is a [*] @cancel [*]{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [for|like] (@todayterms){weight=6},hourly forecast{weight=100}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do is a [*] @yes [*]{weight=1000}
+[*] (@goodbye) [*]{weight=1},fuzzybot do is a *{weight=1000}
+hourly forecast{weight=100},[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20}
+fuzzybot do help{weight=1000},are you [a] fox
+fuzzybot do help{weight=1000},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do help{weight=1000},fuzzybot do weather error *{weight=100}
+fuzzybot do settings buttons temperature{weight=1000},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (@goodbye) [*]{weight=1}
+hourly forecast{weight=100},fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*]
+fuzzybot do help{weight=1000},fuzzybot do help{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},fuzzybot do save location continue{weight=200}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},[*] (@goodbye) [*]{weight=1}
+fuzzybot do save location continue{weight=200},fuzzybot do weather buttons in *{weight=101}
+hourly forecast{weight=100},fuzzybot do save location continue{weight=200}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do is a [*] @cancel [*]{weight=1000}
+fuzzybot do help{weight=1000},[*] what is up [*]
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do pollen medium
+fuzzybot do location was saved,fuzzybot do is a *{weight=1000}
+fuzzybot do first message,set @notificationsword
+fuzzybot do location was saved,fuzzybot do first message
+fuzzybot do location was saved,fuzzybot do location was saved
+fuzzybot do help{weight=1000},fuzzybot do weather convert temp{weight=100}
+fuzzybot do is a [*] @no [*]{weight=1000},@sureyes{weight=2}
+fuzzybot do lang en wildcard{weight=1},@sureyes{weight=2}
+set @notificationsword,fuzzybot do is a *{weight=1000}
+fuzzybot do settings buttons temperature{weight=1000},more info
+5-day forecast,fuzzybot do is a *{weight=1000}
+more info,fuzzybot do is a [*] @no [*]{weight=1000}
+fuzzybot do location was saved,set @notificationsword
+more info,fuzzybot do is a [*] @yes [*]{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20}
+fuzzybot do help{weight=1000},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},hourly forecast{weight=100}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do ignore banned
+(@hourlyforecast){weight=5},hourly forecast{weight=100}
+[*] (@tomorrowterms) weather [*]{weight=101},fuzzybot do weather error *{weight=100}
+more info,fuzzybot do weather convert temp{weight=100}
+fuzzybot do is a *,more info
+more info,fuzzybot do make nice username{weight=1000}
+*,fuzzybot do notification change and *
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do pollen high
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do hunger topic
+(what are|when) [*] (@notificationsword){weight=10},more info
+hourly forecast{weight=100},fuzzybot do settings buttons temperature{weight=1000}
+hourly forecast{weight=100},fuzzybot do is a *{weight=1000}
+fuzzybot do location was saved,fuzzybot do lang en wildcard{weight=1}
+fuzzybot do make nice username{weight=1000},@sureyes{weight=2}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},@sureyes{weight=2}
+fuzzybot do first message,fuzzybot do help{weight=1000}
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},fuzzybot do help{weight=1000}
+@sureyes{weight=2},fuzzybot do weather error *{weight=100}
+*,fuzzybot do settings buttons temperature{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},@sureyes{weight=2}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do location was saved
+(5day|5 day|5-day|five day) forecast{weight=100},set @notificationsword
+(5day|5 day|5-day|five day) forecast{weight=100},@sureyes{weight=2}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do settings buttons temperature{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do location was saved
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},more info
+fuzzybot do location was saved,fuzzybot do weather error *{weight=100}
+hourly forecast{weight=100},fuzzybot do notification forecast{weight=100}
+[*] (@weatherword) [*] (@dayabbvterms) [*]{weight=101},fuzzybot do lang en wildcard{weight=1}
+hourly forecast{weight=100},[*] (@goodbye) [*]{weight=1}
+[*] (@weatherword) [*] (@dayabbvterms) [*]{weight=101},fuzzybot do weather error *{weight=100}
+fuzzybot do help{weight=1000},[*] (purr|puurr|meow|roar|mew) [*]
+(@forecast){weight=5},fuzzybot do is a *{weight=1000}
+[*] (@forecast|@weatherword) please [*]{weight=6},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do is a [*] (turn off|off|stop|delete|remove|rm|end|del|unsub|unsubscribe) [*]
+fuzzybot do pollen medium,fuzzybot do lang en wildcard{weight=1}
+[*] (@weatherword) [*] (@dayabbvterms) [*]{weight=101},[*] (@weatherword) [*] (@dayabbvterms) [*]{weight=101}
+fuzzybot do notification change and *,@sureyes{weight=2}
+hourly forecast{weight=100},more info
+fuzzybot do location was saved,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do pollen high,fuzzybot do is a *{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},fuzzybot do pollen high
+fuzzybot do help{weight=1000},(great|cool|awesome|ok|okay)
+fuzzybot do pollen high,fuzzybot do make nice username{weight=1000}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do make nice username{weight=1000}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],@sureyes{weight=2}
+hourly forecast{weight=100},fuzzybot do pollen medium
+@sureyes{weight=2},fuzzybot do weather convert temp{weight=100}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5},more info
+(what are|when) [*] (@notificationsword){weight=10},@sureyes{weight=2}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do location was saved
+more info,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+(5day|5 day|5-day|five day) forecast{weight=100},more info
+fuzzybot do help{weight=1000},[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+fuzzybot do is a [*] @cancel [*]{weight=1000},fuzzybot do is a [*] @cancel [*]{weight=1000}
+fuzzybot do help{weight=1000},fuzzybot do is a [*] @cancel [*]{weight=1000}
+zuck likes poncho,fuzzybot do is a *{weight=1000}
+zuck likes poncho,fuzzybot do lang en wildcard{weight=1}
+(@updateword) [*] (location){weight=100},more info
+(@updateword) [*] (location){weight=100},@sureyes{weight=2}
+fuzzybot do settings buttons temperature{weight=1000},fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*]
+fuzzybot do location was saved,[*] (@goodbye) [*]{weight=1}
+fuzzybot do help{weight=1000},[*] (@goodbye) [*]{weight=1}
+fuzzybot do save location continue{weight=200},[*] (@goodbye) [*]{weight=1}
+more info,fuzzybot do weather error *{weight=100}
+hourly forecast{weight=100},fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},[*] (how are you|how're you|howre you) [*]
+fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000},fuzzybot do make nice username{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6},@sureyes{weight=2}
+fuzzybot do pollen high,[*] (@goodbye) [*]{weight=1}
+[*] (how are you|how're you|howre you) [*],fuzzybot do make nice username{weight=1000}
+fuzzybot do pollen medium,fuzzybot do make nice username{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do pollen low
+fuzzybot do pollen medium,(great|cool|awesome|ok|okay)
+[*] (@outlook) [@nearplace] *{weight=5},fuzzybot do help{weight=1000}
+fuzzybot do notification change and *,more info
+[*] (how are you|how're you|howre you) [*],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do location was saved,fuzzybot do help{weight=1000}
+(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100},fuzzybot do is a *{weight=1000}
+fuzzybot do save location continue{weight=200},@sureyes{weight=2}
+fuzzybot do location was saved,(great|cool|awesome|ok|okay)
+fuzzybot do settings buttons temperature{weight=1000},@sureyes{weight=2}
+[*] (@goodbye) [*]{weight=1},[*] (how are you|how're you|howre you) [*]
+fuzzybot do pollen medium,fuzzybot do pollen medium
+fuzzybot do help{weight=1000},fuzzybot do is a [*] @yes [*]{weight=1000}
+hourly forecast{weight=100},[*] (@badwordsinsults) [*]
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms) [*] [@nearplace] *{weight=6},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do pollen medium,[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do is a [*] @cancel [*]{weight=1000},@sureyes{weight=2}
+[*] (how are you|how're you|howre you) [*],fuzzybot do lang en wildcard{weight=1}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+fuzzybot do pollen medium,fuzzybot do pollen high
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*],[*] (how are you|how're you|howre you) [*]
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do is a [*] (turn off|off|stop|delete|remove|rm|end|del|unsub|unsubscribe) [*]
+fuzzybot do save location continue{weight=200},more info
+fuzzybot do settings buttons temperature{weight=1000},(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100}
+[*] (@badwordsmiddleschool) [*],[*] (@badwordsmiddleschool) [*]
+hourly forecast{weight=100},(@weatherword) (@tomorrowterms) [@hereterms]{weight=5}
+hourly forecast{weight=100},fuzzybot do pollen low
+fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*],[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do is a [*] (turn off|off|stop|delete|remove|rm|end|del|unsub|unsubscribe) [*],fuzzybot do help{weight=1000}
+fuzzybot do set firsttime location{weight=200},fuzzybot do set firsttime location{weight=200}
+fuzzybot do set firsttime location{weight=200},fuzzybot do help{weight=1000}
+fuzzybot do set firsttime location{weight=200},fuzzybot do is a [*] @yes [*]{weight=1000}
+fuzzybot do is a [*] @yes [*]{weight=1000},@sureyes{weight=2}
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20},fuzzybot do is a *{weight=1000}
+* (@weatherword){weight=5},[*] (@weatherword) [*] (@dayabbvterms) [*]{weight=101}
+fuzzybot do notification change and *,fuzzybot do location was saved
+(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100},fuzzybot do help{weight=1000}
+[*] (@goodbye) [*]{weight=1},yes
+[*] (@tomorrowterms) weather [*]{weight=101},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do make nice username{weight=1000},yes
+(what are|when) [*] (@notificationsword){weight=10},[*] (turn off|disable|stop|no more|pause) [*] (@notificationsword) [*]{weight=101}
+set @notificationsword,fuzzybot do lang en wildcard{weight=1}
+[*] (how are you|how're you|howre you) [*],fuzzybot do is a *{weight=1000}
+hourly forecast{weight=100},fuzzybot do notification forecast at *{weight=100}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do is a [*] @yes [*]{weight=1000}
+fuzzybot do help{weight=1000},fuzzybot do pollen high
+* (@weatherword){weight=5},more info
+* (@weatherword){weight=5},fuzzybot do is a *{weight=1000}
+*,[*] (turn off|disable|stop|no more|pause) [*] (@notificationsword) [*]{weight=101}
+fuzzybot do pollen high,fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20},fuzzybot do help{weight=1000}
+fuzzybot do pollen medium,fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+fuzzybot do save location continue{weight=200},fuzzybot do is a [*] @cancel [*]{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5},fuzzybot do weather buttons in *{weight=101}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do who will win the election
+(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100},@sureyes{weight=2}
+fuzzybot do help{weight=1000},[*] (how are you|how're you|howre you) [*]
+(@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do is a *{weight=1000}
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*],[*] (@hello) [*]
+fuzzybot do location was saved,fuzzybot do is a [*] @no [*]{weight=1000}
+hourly forecast{weight=100},[error] fuzzybot do (frizz|pollen) error *{weight=100}
+fuzzybot do pollen medium,fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000}
+(what are|when) [*] (@notificationsword){weight=10},fuzzybot do is a [*] @yes [*]{weight=1000}
+*,(@updateword) [*] (location){weight=100}
+fuzzybot do location was saved,fuzzybot do is a [*] @yes [*]{weight=1000}
+*,[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*]
+fuzzybot do nlp word future tense for *{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do nlp weather error *{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do nlp weather error *{weight=1000}
+fuzzybot do nlp weather error *{weight=1000},fuzzybot do nlp weather error *{weight=1000}
+*,fuzzybot do nlp weather error *{weight=1000}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do help{weight=1000}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do weather convert temp{weight=1000}
+fuzzybot do nlp word present tense for *{weight=1000},fuzzybot do lang en wildcard{weight=1}
+*,fuzzybot do nlp word present tense for *{weight=1000}
+(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100},(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100}
+(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100},(@updateword) [*] (@temperatureword) [to] @fahrenheitword{weight=100}
+(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100},fuzzybot do first message
+*,fuzzybot do weather buttons in *{weight=1000}
+*,fuzzybot do set firsttime location{weight=200}
+fuzzybot do weather convert temp{weight=1000},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2),fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2)
+fuzzybot do weather convert temp{weight=1000},fuzzybot do weather convert temp{weight=100}
+fuzzybot do weather buttons in *{weight=1000},fuzzybot do weather buttons in *{weight=1000}
+[*] (@hello) [*],[*] (how are you|how're you|howre you) [*]
+*,fuzzybot do weather convert min temp{weight=1000}
+fuzzybot do weather convert min temp{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2),fuzzybot do lang en wildcard{weight=1}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2)
+fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2),[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do weather convert min temp{weight=1000},fuzzybot do weather convert min temp{weight=1000}
+fuzzybot do weather convert temp{weight=1000},[*] (@hello) [*]
+fuzzybot do weather convert temp{weight=1000},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do weather buttons in *{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do weather convert temp{weight=1000},hourly forecast{weight=100}
+fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2),fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000}
+(@updateword) [*] (@temperatureword) [to] @fahrenheitword{weight=100},(@updateword) [*] (@temperatureword) [to] @fahrenheitword{weight=100}
+fuzzybot do weather convert min temp{weight=1000},fuzzybot do help{weight=1000}
+fuzzybot do weather convert min temp{weight=1000},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do weather convert min temp{weight=1000},[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do is a *{weight=1000}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do settings buttons temperature{weight=1000}
+hourly forecast{weight=100},fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2)
+fuzzybot do weather convert temp{weight=1000},(great|cool|awesome|ok|okay)
+[error] fuzzybot do (frizz|pollen) error *{weight=1000},fuzzybot do lang en wildcard{weight=1}
+*,(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100}
+fuzzybot do nlp weather error *{weight=1000},fuzzybot do help{weight=1000}
+fuzzybot do nlp word future tense for *{weight=1000},fuzzybot do nlp word future tense for *{weight=1000}
+*,[error] fuzzybot do (frizz|pollen) error *{weight=1000}
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do weather convert temp{weight=1000}
+fuzzybot do nlp word present tense for *{weight=1000},fuzzybot do nlp word present tense for *{weight=1000}
+fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2),fuzzybot do make nice username{weight=1000}
+*,[*] [referral|referal|refer|promo] (code|codes) [*]
+*,fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2)
+*,fuzzybot do nlp weather condition at what time{weight=1000}
+fuzzybot do nlp weather condition at what time{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do nlp word future tense for *{weight=1000}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do make nice username{weight=1000}
+fuzzybot do save location continue{weight=200},fuzzybot do pollen medium
+fuzzybot do notification forecast subject at *{weight=1000},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do notification forecast subject at *{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do pollen medium
+(5day|5 day|5-day|five day) forecast{weight=100},fuzzybot do notification forecast subject at *{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do pollen high
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2)
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do weather convert temp{weight=1000},[*] (@goodbye) [*]{weight=1}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do make nice username{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000},[*] (@goodbye) [*]{weight=1}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+fuzzybot do nlp weather condition at what time{weight=1000},fuzzybot do nlp weather condition at what time{weight=1000}
+fuzzybot do weather convert temp{weight=1000},[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+fuzzybot do weather buttons in *{weight=1000},fuzzybot do save location continue{weight=200}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000}
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*],[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*]
+fuzzybot do weather convert temp{weight=1000},fuzzybot do weather convert min temp{weight=1000}
+*,fuzzybot do notification forecast subject at *{weight=1000}
+fuzzybot do nlp weather error *{weight=1000},@sureyes{weight=2}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do is a *{weight=1000}
+fuzzybot do weather convert temp{weight=1000},fuzzybot do notification forecast subject at *{weight=1000}
+hourly forecast{weight=100},fuzzybot do notification forecast subject at *{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do help{weight=1000}
+*,fuzzybot do nlp (time|weather) not found{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do save location continue{weight=200}
+fuzzybot do nlp weather accessory currently * false [*]{weight=1000},fuzzybot do nlp weather accessory currently * false [*]{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do pollen low
+fuzzybot do notification forecast subject at *{weight=1000},(great|cool|awesome|ok|okay)
+fuzzybot do fallback forecast{weight=500},direct: nlpCheckHourlyForecast
+fuzzybot do wildcard *{weight=1},direct: nlpCheckHourlyForecast
+[*] (@helpword) [*]{weight=200},direct: nlpCheckHourlyForecast
+fuzzybot do sticker response [*],fuzzybot do wildcard *{weight=1}
+fuzzybot do nlp (time|weather) not found{weight=1000},fuzzybot do wildcard *{weight=1}
+fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2),fuzzybot do fallback forecast{weight=500}
+direct: nlpCheckOutlook,direct: nlpCheckHourlyForecast
+fuzzybot do sticker response [*],[*] (@helpword) [*]{weight=200}
+fuzzybot do fallback forecast{weight=500},fuzzybot do fallback forecast{weight=500}
+fuzzybot do sticker response [*],fuzzybot do sticker response [*]
+fuzzybot do nlp weather currently{weight=1000},fuzzybot do lang en wildcard{weight=1}
+fuzzybot do nlp weather currently{weight=1000},[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+fuzzybot do nlp weather currently{weight=1000},fuzzybot do wildcard *{weight=1}
+fuzzybot do nlp weather currently{weight=1000},fuzzybot do nlp weather currently{weight=1000}
+fuzzybot do lang en wildcard{weight=1},fuzzybot do fallback forecast{weight=500}
+fuzzybot do notification forecast subject at *{weight=1000},[*] (@hello) [*]
+fuzzybot do nlp weather currently{weight=1000},fuzzybot do fallback forecast{weight=500}
+*,fuzzybot do nlp weather currently{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000},direct: nlpCheckHourlyForecast
+fuzzybot do notification forecast subject at *{weight=1000},direct: nlpCheckOutlook
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10},fuzzybot do notification forecast subject at *{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do sticker response [*]
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do wildcard *{weight=1}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do fallback forecast{weight=500}
+fuzzybot do help{weight=1000},fuzzybot do fallback forecast{weight=500}
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo],fuzzybot do wildcard *{weight=1}
+fuzzybot do nlp weather currently{weight=1000},fuzzybot do sticker response [*]
+fuzzybot do nlp weather currently{weight=1000},[*] (@hello) [*]
+fuzzybot do wildcard *{weight=1},fuzzybot do fallback forecast{weight=500}
+fuzzybot do nlp weather currently{weight=1000},direct: nlpCheckOutlook
+[*] (@goodbye) [*]{weight=1},fuzzybot do wildcard *{weight=1}
+fuzzybot do sticker response [*],fuzzybot do fallback forecast{weight=500}
+[*] (@helpword) [*]{weight=200},direct: nlpCheckOutlook
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do fallback forecast{weight=500}
+(great|cool|awesome|ok|okay),fuzzybot do wildcard *{weight=1}
+fuzzybot do nlp weather currently{weight=1000},fuzzybot do notification forecast subject at *{weight=1000}
+*,[change|show|list|update|delete|edit|adjust|alter|snooze|stop] [*] (@notificationsword){weight=1}
+fuzzybot do wildcard *{weight=1},direct: nlpCheckOutlook
+(haha|hahaha|hahahaha|lol|lolz|hehe|hehehe|hah),(haha|hahaha|hahahaha|lol|lolz|hehe|hehehe|hah)
+[*] (@badwordsinsults) [*],fuzzybot do wildcard *{weight=1}
+[*] (@helpword) [*]{weight=200},fuzzybot do wildcard *{weight=1}
+(haha|hahaha|hahahaha|lol|lolz|hehe|hehehe|hah),fuzzybot do wildcard *{weight=1}
+fuzzybot do wildcard *{weight=1},fuzzybot do wildcard *{weight=1}
+fuzzybot do fallback forecast{weight=500},*{weight=1}
+[change|show|list|update|delete|edit|adjust|alter|snooze|stop] [*] (@notificationsword){weight=1},fuzzybot do wildcard *{weight=1}
+direct: nlpCheckHourlyForecast,direct: nlpCheckHourlyForecast
+fuzzybot do fallback forecast{weight=500},direct: nlpCheckOutlook
+fuzzybot do nlp (time|weather) not found{weight=1000},fuzzybot do nlp weather currently{weight=1000}
+[*] (@hello) [*],fuzzybot do wildcard *{weight=1}
+fuzzybot do notification forecast subject at *{weight=1000},[*] (@helpword) [*]{weight=200}
+[*] (settings|setting|preferences|prefs) [*],[*] (@helpword) [*]{weight=200}
+fuzzybot do nlp weather at day #{weight=1000},fuzzybot do wildcard *{weight=1}
+[*] (settings|setting|preferences|prefs) [*],fuzzybot do wildcard *{weight=1}
+*,fuzzybot do sticker response [*]
+fuzzybot do push notification subject at (3|4|5|6|7|8|9|10|11|12|13|14),fuzzybot do push notification subject at (3|4|5|6|7|8|9|10|11|12|13|14)
+fuzzybot do notification forecast subject at *{weight=1000},fuzzybot do abtest push notification 00001
+fuzzybot do nlp temperature currently{weight=1000},fuzzybot do wildcard *{weight=1}
+fuzzybot do notification activate saved *,fuzzybot do wildcard *{weight=1}
+[*] (how are you|how're you|howre you) [*],fuzzybot do wildcard *{weight=1}
+[*] (@badwordsmiddleschool) [*],fuzzybot do wildcard *{weight=1}
+fuzzybot do location was saved,direct: nlpCheckOutlook
+fuzzybot do nlp weather currently{weight=1000},fuzzybot do nlp weather accessory currently * false [*]{weight=1000}

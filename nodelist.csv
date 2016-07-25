@@ -1,0 +1,1102 @@
+id
+-redirect now tell me
+i like music
+*
+i work out a lot
+no (i'm|i am) just fine
+with a twist
+yes thank you
+i work a lot
+[*] can i be [an] ambassador [*]
+[*] can i join (poncho|you) [*]
+[*] can i (join|be in|be part of|be a part of) your (club|fan club|fanclub) [*]
+[*] (tornado|tornados|tornadoes|monsoon|monsoons|tsunami|tsunamis|hurricane|huricane|hurricanes|huricanes|storm|storming|stormy|tropical storm|tropical storms|winter storm|winter storms|blizzard|blizzards|whiteout|snowpocalypse|snowmaggedon|flood|floods|flooding|damaging winds|strong winds|high winds|ice storm|ice storms|lake effect storms|lake effect storm|snow squall|snow squalls|freezing rain|storm surge|flash flood|wildfire|fire danger|fire watch|red flag warning|hailing|hail|black ice|blackice|white out|whiteout|severe weather) [*]
+fuzzybot do tempcondition{weight=1000}
+severe weather info
+got anything else
+i do not want to cook
+i am starving
+(gimme|i am hungry for more)
+*
+meat lovers
+the seabreeze
+food mouth now
+no not right now
+(no|not anymore|yum yum|hush i am ordering|not hungry anymore|this turkey's done lemme eat)
+pineapple and olives
+fuzzybot do you full
+(su|sudo) apt-get _{weight=5000}
+(su|sudo) etc shadow
+(su|sudo) *{weight=5000}
+(su|sudo) apt-get _ *{weight=5000}
+fuzzybot do abtest push notification 00001 step 2 sports
+fuzzybot do abtest push notification 00001 final
+fuzzybot do abtest push notification 00001 followup
+*
+[*] (@blockword) [*]{weight=10}
+fuzzybot do abtest push notification 00001 step 2 game of thrones
+fuzzybot do abtest push notification 00001 step 2 pickleball
+[*] what is your sign [*]
+[*] do (ufos|aliens|extraterrestrials) exist [*]
+[*] you are [a] virgo [*]
+[*] who (shot|killed|assassinated) (jfk|john f kennedy|john kennedy) [*]
+[*] i am [also] [a] virgo [*]
+[*] (does|do) (@deities) exist [*]
+[*] (are|is) (@deities) [a] (man|men|woman|women|girl|boy) [*]
+[*] where [are] the bodies (buried|burried|hidden|hiden) [*]
+[*] (are|is) (@deities) [for] real [*]
+[*] do you believe in (slenderman|slender man|slender) [*]
+[*] (who|what|do you believe) is (slenderman|slender man|slender) [*]
+[*] what is your horoscope [*]
+[*] (@weatherword) [*] (@tomorrowterms) [*] [@showas] (@celsiusword){weight=5}
+fuzzybot do email saved{weight=100}
+fuzzybot do awake at night
+[are] you (there|online|working|workin)
+fuzzybot do nlp weather accessory will be * false [*]{weight=1000}
+[*] pickles [*]
+[*] (@hourlyforecast) [@showas] (@celsiusword) [@nearplace] *{weight=5}
+fuzzybot do user sent location attachment failed *{weight=100}
+can i work for (you|poncho)
+fuzzybot do weather word in pm{weight=1000}
+fuzzybot do nickname no weird punctuation{weight=100}
+(5day|5 day|5-day|five day) forecast{weight=100}
+[*] (pollen|sneeze|allergy|allergies) [@nearplace] *
+fuzzybot do nlp weather condition how much *{weight=1000}
+[*] (@weatherword) @nearplace * [on|for|be like|next] (@dayabbvterms) [*]{weight=102}
+[*] (@tomorrowterms) [*] (@weatherword) [@nearplace] *{weight=5}
+fuzzybot do nlp weather at period temperature{weight=1000}
+fuzzybot do nlp weather accessory will be * true [*]{weight=1000}
+fuzzybot do nlp temperature condition * at hour # is * (false){weight=1000}
+[*] (@weatherword) (@showas) (@celsiusword) [@nearplace] *{weight=5}
+fuzzybot do fallback forecast temps{weight=1000}
+fuzzybot do nlp subjective condition currently * true *{weight=1000}
+[*] (@weatherword) [@nearplace] * (@tomorrowterms) [*] [@showas] (@fahrenheitword){weight=5}
+fuzzybot do notification forecast{weight=1000}
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) (@nearplace) *{weight=20}
+fuzzybot do weather convert temp{weight=1000}
+fuzzybot do high temperature is #{weight=1000}
+[*] (@tomorrowterms) weather [*]{weight=101}
+(will|is) [*] (@allweatherterms) [*] (@dayabbvterms) [day] (@nearplace) *{weight=30}
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms) [*] [@nearplace] *{weight=6}
+(中文|中文懂吗|你懂中文嗎)
+(@allweatherterms) (@dayabbvterms) [day] (@nearplace) *{weight=30}
+fuzzybot do nlp subjective condition currently * false *{weight=1000}
+(will|is) [*] (@allweatherterms) (@nearplace) * (@laterortomorrowterms) [*]{weight=20}
+(use|list|show|update) [@showas] @celsiusword{weight=100}
+[*] (@forecast) [@nearplace] * (@showas) (@celsiusword){weight=5}
+fuzzybot do nlp weather at period * on day diff #{weight=1000}
+fuzzybot do welcome button 1{weight=100}
+(@updateword) [*] (location){weight=100}
+fuzzybot do condition (@allweatherterms) (@allweatherterms) at * in *{weight=1000}
+[*] jungle pig [*]
+fuzzybot do praise zuck
+(@outlook) [@showas] (@fahrenheitword){weight=5}
+[*] (good morning) [*]
+(@updateword) [*] (@phonenumberword) [to] *{weight=100}
+[*] (@outlook) [@nearplace] * [@showas] (@fahrenheitword)
+(pollen|sneeze|allergy|allergies) [and|&] (hair|frizz)
+(do|does) (you|poncho) [*] (need|want) [a|an] [part-time|part time|parttime] (editor|writer|creative editor|manager|marketing|engineer|programmer|design|graphic designer) [*]
+fuzzybot do nlp weather at period * on day today{weight=1000}
+[*] (hair|frizz) (@forecast) [*]{weight=100}
+fuzzybot do saved phone{weight=100}{weight=100}
+fuzzybot do nlp temperature condition * at day today is * (false){weight=1000}
+[*] (@weatherword) please [*]{weight=6}
+fuzzybot do nlp temperature at hour # next day{weight=1000}
+fuzzybot do settings timezone{weight=1000}
+[*] weather [*] yesterday [*]{weight=5}
+[*] (@emailaddressword) is *{weight=100}
+fuzzybot do nlp temperature condition * at day today is * (true){weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [like|currently|right now]{weight=6}
+[change|show|list|update|delete|edit|adjust|alter|snooze|stop] [*] (@notificationsword){weight=1}
+(what are|when) [*] (@notificationsword){weight=10}
+fuzzybot do nlp condition * at day today is * (true){weight=1000}
+current (temp|temps|temperature){weight=5}
+(@hourlyforecast) *{weight=5}
+fuzzybot do settings location{weight=1000}
+[*] (@weatherword) [@showas] (@fahrenheitword) [@nearplace] * (@tomorrowterms) [*]{weight=5}
+fuzzybot do nlp condition * at hour # is * (true){weight=1000}
+fuzzybot do nlp weather at day today{weight=1000}
+(use|list|show|update) [@showas] @fahrenheitword{weight=100}
+fuzzybot do nlp weather accessory (currently|will be) underwear (true|false) [*]{weight=2000}
+[*] (enable|turn on|start) [*] (@notificationsword) [*]{weight=101}
+[*] (@weatherword) [*] (@tomorrowterms) [@showas] (@celsiusword) [@nearplace] *{weight=5}
+(hair|frizz) [and|&] (pollen|sneeze|allergy|allergies)
+(@tomorrowterms) (@weatherword) [@hereterms]{weight=5}
+fuzzybot do nlp condition * at day tomorrow is * (false){weight=1000}
+fuzzybot do weather convert wind{weight=1000}
+[*] next (week|weeks|week's) @forecast {weight=101}
+[*] (@whatrequest) [*] (@weatherword) [for|like] (@todayterms){weight=6}
+fuzzybot do nlp weather at hour <star1> next day{weight=1000}
+fuzzybot do weather as word{weight=1000}
+[*] (@whatrequest) [*] (@hourlyforecast){weight=5}
+fuzzybot do is weather condition{weight=1000}
+fuzzybot do weather tomorrow{weight=1000}
+(will|is) [*] (@allweatherterms) [*] (@dayabbvterms) [day]{weight=30}
+(what) [*] (@phonenumberword)
+(its|today's) my (birthday|b-day) [today]
+fuzzybot do weather day *{weight=1000}
+[*] (@weatherword) [*] (@tomorrowterms) [*] [@nearplace] * [@showas] (@celsiusword){weight=5}
+fuzzybot do temperature saved as fahrenheit{weight=100}
+[*] i (hate|do not like|dislike|loathe|despise|detest) facebook [*]
+fuzzybot do user sent location attachment found *{weight=100}
+[*] (@hourlyforecast) [@nearplace] *{weight=5}
+[*] you (there|online|working|workin) [*]
+do you (know|like|love) (@zuck)
+[*] (@forecast|@weatherword) please [*]{weight=6}
+* (live|reside|sleep) [at|in|near|on] *
+(use|list|show) [@showas] @metricword{weight=100}
+evening
+fuzzybot do notification title type * time * * * *{weight=100}
+let's play
+(hair|frizz) [and|&] (pollen|sneeze|allergy|allergies) *
+fuzzybot do weather convert min temp{weight=1000}
+[*] (is it|is) [*] (@allweatherterms) [*] [@hereterms] [*]{weight=10}
+fuzzybot do nlp weather error{weight=1000}
+(@hourlyforecast) [@showas] (@celsiusword) *{weight=5}
+fuzzybot do weather convert feel temp{weight=1000}
+fuzzybot do nlp condition * at weekend is * (false){weight=1000}
+fuzzybot do push notification subject missing location
+fuzzybot do make weather forecast at given day
+(@hourlyforecast){weight=5}
+fuzzybot do save location confirm{weight=100}
+fuzzybot do nlp condition * at day tomorrow is * (true){weight=1000}
+[*] (@weatherword) @nearplace * next week [*]{weight=102}
+fuzzybot do set firsttime location{weight=200}
+(@updateword) [*] (@measurementword) [to] @imperialword{weight=100}
+fuzzybot do nlp condition * at period * on day diff # is * (false){weight=1000}
+fuzzybot do nlp temperature condition * at day # is * (false){weight=1000}
+what is my (ref|referral) code{weight=100}
+hourly forecast{weight=100}
+fuzzybot do mock severe alert{weight=1000}
+[*] (@forecast) [*] (@dayabbvterms) [*] @nearplace *{weight=102}
+(snooze|pause|hold|delay) [*] (@notificationsword)
+fuzzybot do settings buttons temperature{weight=1000}
+hair (&|and) pollen [forecast]{weight=100}
+fuzzybot do notification forecast at *{weight=1000}
+(current|currently)
+fuzzybot do measurement saved as imperial{weight=100}
+[*] (@whatrequest) [*] (@tomorrowterms) [*] (@weatherword){weight=5}
+fuzzybot do speech error{weight=1000}
+[*] (@hourlyforecast) [@showas] (@fahrenheitword) [@nearplace] *{weight=5}
+(@hourlyforecast) * [@showas] (@celsiusword){weight=5}
+fuzzybot do nlp (time|weather) not found{weight=1000}
+[*] (hair|frizz) [@nearplace] *
+fuzzybot do get location variable{weight=1000}
+(current|currently) (condition|conditions){weight=5}
+[*] (@outlook) [@showas] (@fahrenheitword) [@nearplace] *
+fuzzybot do settings temperature{weight=1000}
+(hair|frizz) *
+fuzzybot do nickname saved *{weight=100}
+fuzzybot do nlp temperature condition * at hour # is * (true) next day{weight=1000}
+fuzzybot do temperature at hour #
+(@outlook) *{weight=5}
+fuzzybot do weather convert precip{weight=1000}
+[*] (@forecast) (@showas) (@celsiusword) [@nearplace] *{weight=5}
+(@outlook) [@showas] (@celsiusword){weight=5}
+fuzzybot do nlp weather at hour #{weight=1000}
+[*] (@forecast) @nearplace * [on|for|be like|next] (@dayabbvterms) [*]{weight=102}
+fuzzybot do nlp weather accessory (currently|will be) hood by air (true|false) [*]{weight=2000}
+[*] (good afternoon) [*]
+fuzzybot do nlp weather accessory (currently|will be) speedos (true|false) [*]{weight=2000}
+(@outlook) [@showas] (@celsiusword) *{weight=5}
+fuzzybot do nlp temperature condition * at period * on day diff # is * (false){weight=1000}
+fuzzybot do nlp temperature condition * at hour # is * (false) next day{weight=1000}
+fuzzybot do nlp word present tense for *{weight=1000}
+[*] (@hourlyforecast) [@nearplace] * [@showas] (@fahrenheitword){weight=5}
+* (current|currently)
+fuzzybot do nlp condition * at day # is * (true){weight=1000}
+fuzzybot do temperature * at * in *{weight=1000}
+[*] (hair|frizz) [and|&] (pollen|sneeze|allergy|allergies) [@nearplace] *
+fuzzybot do weather word in am{weight=1000}
+[*] (@weatherword) (@showas) (@fahrenheitword){weight=5}
+fuzzybot do speech not parsed{weight=1000}
+fuzzybot do make weather forecast
+(will|is) [*] (@allweatherterms) [*] (@laterortomorrowterms) [*]{weight=20}
+fuzzybot do nickname call phone{weight=100}
+(@weatherword) * (@tomorrowterms) [*]{weight=5}
+fuzzybot do weather outside date range{weight=1000}
+fuzzybot do weather not found *{weight=1000}
+fuzzybot do nlp weather currently{weight=1000}
+[*] (@tomorrowterms) [*] (@weatherword) [@nearplace] * [@showas] (@celsiusword){weight=5}
+(@outlook) * [@showas] (@fahrenheitword)
+fuzzybot do is weather temp *{weight=1000}
+fuzzybot do nlp weather condition at what time{weight=1000}
+[*] (@weatherword) (@weekendterms) [*]{weight=101}
+fuzzybot do nlp weather accessory currently * false [*]{weight=1000}
+fuzzybot do measurement saved as metric{weight=100}
+[*] (@outlook) [@showas] (@celsiusword) [@nearplace] *
+fuzzybot do notification forecast pollen{weight=1000}
+[turn] (off|deactivate|stop|delete|remove|end) [*] (@notificationsword)
+[*] (@zuck) [*]
+(@forecast) * [@showas] (@fahrenheitword){weight=5}
+(uu|try onboarding)
+do you know where i (live|am)
+fuzzybot do nlp condition * currently is * (false){weight=1000}
+current (@weatherword) [@hereterms]{weight=5}
+[*] (@tomorrowterms) [*] (@weatherword) [@nearplace] * [@showas] (@fahrenheitword){weight=5}
+[*] (@outlook) [@nearplace] *{weight=5}
+fuzzybot do reset location
+fuzzybot do is weather not condition *{weight=1000}
+[*] (@whatrequest) [*] (@weatherword) [for|like] (@latertonightterms){weight=5}
+fuzzybot do nlp temperature condition * at day # is * (true){weight=1000}
+[*] (@weatherword) [*] (@tomorrowterms) [@nearplace] *{weight=5}
+[*] (is it|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20}
+fuzzybot do speech *{weight=1000}
+fuzzybot do nlp temperature at hour #{weight=1000}
+fuzzybot do low temperature is #{weight=1000}
+(@forecast) [@showas] (@fahrenheitword){weight=5}
+fuzzybot do make weather forecast at hour #
+fuzzybot do make weather forecast at given hour
+do you (like|love|enjoy) the weather
+[*] (@weekendterms) [*] (@weatherword) [*]{weight=101}
+[*] (@weatherword) [@nearplace] * (@tomorrowterms) [*]{weight=5}
+[*] (good evening) [*]
+[*] humidity [*]
+(@hourlyforecast) * [@showas] (@fahrenheitword){weight=5}
+[*] (@weatherword) [@nearplace] * (@showas) (@fahrenheitword){weight=5}
+fuzzybot do not saved phone{weight=100}
+morning
+fuzzy delay
+[*] (pollen|sneeze|allergy|allergies) [and|&] (hair|frizz) [@nearplace] *
+(@hourlyforecast) [@showas] (@celsiusword){weight=5}
+[*] (settings|setting|preferences|prefs) [*]
+(today’s|today's|todays) (forecast|weather){weight=2000}
+[*] (@weekendterms) [*] @nearplace *{weight=102}
+fuzzybot do save location *{weight=100}
+[*] (@weatherword) [*] (@tomorrowterms) [@showas] (@fahrenheitword) [@nearplace] *{weight=5}
+fuzzybot do nlp weather at period * on day tomorrow{weight=1000}
+[error] fuzzybot do (frizz|pollen) error *{weight=1000}
+(@outlook) [@showas] (@fahrenheitword) *{weight=5}
+(@allweatherterms) [*] [@nearplace] *{weight=20}
+(@hourlyforecast) [@showas] (@fahrenheitword) *{weight=5}
+fuzzybot do make weather forecast at day #
+fuzzybot do nlp temperature at day tomorrow{weight=1000}
+my (birthday|b-day) is today
+fuzzybot do nlp condition * at day # is * (false){weight=1000}
+fuzzybot do nlp condition * at hour # is * (false){weight=1000}
+fuzzybot do nlp weather accessory currently * true [*]{weight=1000}
+[*] facebook (sucks|sux|blows) [*]
+fuzzybot do weather convert max temp{weight=1000}
+[*] (turn off|disable|stop|no more|pause) [*] (@notificationsword) [*]{weight=101}
+[*] [current] location
+[*] how cold (will it|is it going to) (get|be) [@todayterms] [*]{weight=5}
+[*] (@tomorrowterms) [*] (@weatherword) [@showas] (@fahrenheitword) [@nearplace] *{weight=5}
+(hair|frizz)
+(will|is) [*] (@allweatherterms) [*]{weight=10}
+i want to play
+(@allweatherterms) (@laterortomorrowterms){weight=20}
+(@forecast){weight=5}
+[*] (@outlook) [@nearplace] * [@showas] (@celsiusword)
+fuzzybot do location not found *{weight=1000}
+[*] [@whatrequest] (the|today's) high [@temperatureword] [*]{weight=6}
+fuzzybot do nlp condition * at hour # is * (false) next day{weight=1000}
+fuzzybot do weather in * with facebook buttons{weight=1000}
+fuzzybot do temperature (false|undefined|unknown) at * in *{weight=1000}
+[this] (week|weekly)
+[*] (@forecast) [*] (@dayabbvterms) [*]{weight=101}
+[*] (@weatherword) [@nearplace] * (@tomorrowterms) [*] [@showas] (@celsiusword){weight=5}
+fuzzybot do nlp temperature at period * on day diff #{weight=1000}
+(@forecast) [@showas] (@celsiusword){weight=5}
+(@forecast) [@showas] (@fahrenheitword) *{weight=5}
+can i (have|get) [a] job (with|for) (you|poncho)
+change to (°f|f|fahrenheit){weight=100}
+[*] (@whatrequest) [*] (@weatherword){weight=5}
+(what) [*] (@emailaddressword)
+fuzzybot do email not saved{weight=100}
+fuzzybot do settings buttons location{weight=1000}
+work for you
+fuzzybot do weather error *{weight=1000}
+fuzzybot do notification forecast * at *{weight=1000}
+fuzzybot do nlp subjective condition will be * true *{weight=1000}
+[*] (@weatherword) [*] (@dayabbvterms) [*] @nearplace *{weight=102}
+[*] you (asleep|sleeping|sleepin|in bed|nap|napping) [*]
+fuzzybot do save location complete{weight=200}
+[*] (pollen|sneeze|allergy|allergies) warning [*]{weight=100}
+fuzzybot do temperature at day #
+fuzzybot do sticker response pusheen
+fuzzybot do notification forecast hair{weight=1000}
+fuzzybot do nlp condition * at hour # is * (true) next day{weight=1000}
+fuzzybot do notification forecast subject at *{weight=1000}
+(it|today) is my (birthday|b-day)
+[*] (@weatherword) [*] (@tomorrowterms) [*] [@showas] (@fahrenheitword){weight=5}
+[*] (@whatrequest) [*] (@forecast) [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] *{weight=5}
+(@allweatherterms) (@dayabbvterms) [day]{weight=30}
+* (@weatherword){weight=5}
+* (@forecast){weight=5}
+(@updateword) [*] (@emailaddressword) [to] *{weight=100}
+fuzzybot do nlp temperature at day today{weight=1000}
+[*] you (up|awake) [*]
+(@weatherword) (@tomorrowterms) [@hereterms]{weight=5}
+(@hourlyforecast) [@showas] (@fahrenheitword){weight=5}
+[*] (my name is|my nickname is|call me) *
+fuzzybot do mock forecast{weight=1000}
+fuzzybot do nlp temperature condition * at weekend is * (true){weight=1000}
+(use|list|show) [@showas] @imperialword{weight=100}
+[error] fuzzybot do (frizz|pollen) not found{weight=1000}
+[*] (@weatherword) [*] next week [*]{weight=101}
+fuzzybot do nlp weather at day tomorrow{weight=1000}
+[*] (@weatherword) [*] next week @nearplace *{weight=102}
+[*] (@weatherword) [@nearplace] * (@showas) (@celsiusword){weight=5}
+(@weatherword) (@tomorrowterms) *{weight=5}
+fuzzybot do settings notifications{weight=1000}
+(@tomorrowterms) [*] (@weatherword) *{weight=5}
+[*] (@forecast) (@showas) (@fahrenheitword) [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms){weight=5}
+fuzzybot do nlp weather error *{weight=1000}
+fuzzybot do notification * unknown input{weight=100}
+fuzzybot do nlp weather at day #{weight=1000}
+change to (°c|c|celsius){weight=100}
+* (@hourlyforecast){weight=5}
+(@allweatherterms) [*] [@hereterms] [*]{weight=10}
+(will|is) [*] (@allweatherterms) [*] (@nearplace) *{weight=20}
+what is my account status{weight=100}
+fuzzybot do weather buttons in *{weight=1000}
+(@allweatherterms) (@laterortomorrowterms) (@nearplace) *{weight=20}
+[*] (@whatrequest) it like (@todayterms){weight=5}
+(@updateword) [*] (@temperatureword) [to] @celsiusword{weight=100}
+[@todayterms] (@weatherword) [@todayterms]{weight=5}
+[*] (@whatrequest) [*] (@forecast){weight=5}
+[*] (@weatherword) [*] (@dayabbvterms) [*]{weight=101}
+fuzzybot do sticker response [*]
+(@updateword) [*] (@temperatureword) [to] @fahrenheitword{weight=100}
+fuzzybot do save location continue{weight=200}
+fuzzybot do notification test
+fuzzybot do nlp temperature at day #{weight=1000}
+fuzzybot do nlp temperature condition * at day tomorrow is * (true){weight=1000}
+(@updateword) [*] (@measurementword) [to] @metricword{weight=100}
+fuzzybot do nlp temperature at period temperature{weight=1000}
+[*] (@tomorrowterms) (@weatherword) [@showas] (@fahrenheitword){weight=5}
+(@forecast) *{weight=5}
+[*] how hot (will it|is it going to) (get|be) [@todayterms] [*]{weight=5}
+[*] (@hourlyforecast) [@nearplace] * [@showas] (@celsiusword){weight=5}
+(pollen|sneeze|allergy|allergies) [and|&] (hair|frizz) *
+fuzzybot do notification title index * type * time * * * *{weight=100}
+fuzzybot do condition (@allweatherterms) true at * in *{weight=1000}
+fuzzybot do nlp subjective condition will be * false *{weight=1000}
+[*] (@weatherword) [@todayterms] [@nearplace] *{weight=5}
+you (up|awake)
+fuzzybot do nlp weather at weekend{weight=1000}
+[*] (@tomorrowterms) [*] (@weatherword) [@showas] (@celsiusword){weight=5}
+fuzzybot do nlp temperature condition * at hour # is * (true){weight=1000}
+fuzzybot do temperature past message in *{weight=100}
+fuzzybot do nlp temperature condition * at weekend is * (false){weight=1000}
+afternoon
+fuzzybot do nlp temperature currently{weight=1000}
+(pollen|sneeze|allergy|allergies)
+fuzzybot do nlp given time{weight=1000}
+fuzzybot do nlp temperature condition * currently is * (false){weight=1000}
+[*] (@weatherword) [*] (@tomorrowterms) [*] [@nearplace] * [@showas] (@fahrenheitword){weight=5}
+[*] (@tomorrowterms) [*] (@weatherword) [@nearplace] *{weight=102}
+[*] weekend forecast [*]{weight=101}
+fuzzybot do make temperature at given day
+[*] (today) [*]
+fuzzybot do settings buttons{weight=1000}
+fuzzybot do sticker response like
+fuzzybot do nlp temperature condition * currently is * (true){weight=1000}
+can (you|poncho) give me a job
+[*] [@whatrequest] (the|today's) low [@temperatureword] [*]{weight=6}
+fuzzybot do is weather not temp *{weight=1000}
+current (@weatherword) [@todayterms]{weight=5}
+[*] (@whatrequest) [*] (@weatherword) [@nearplace] * (@tomorrowterms){weight=6}
+[*] (@weatherword) [@showas] (@celsiusword) [@nearplace] * (@tomorrowterms) [*]{weight=5}
+[*] (@whatrequest) [*] (@hourlyforecast) [@nearplace] *{weight=5}
+fuzzybot do notification forecast hair pollen{weight=1000}
+[*] (@weatherword) (@showas) (@celsiusword){weight=5}
+[*] (@forecast) [@nearplace] *{weight=5}
+[*] (@forecast) [@nearplace] * (@showas) (@fahrenheitword){weight=5}
+[*] i (want|need|would like) [a] (@softdrinks)
+fuzzybot do nlp temperature condition * at day tomorrow is * (false){weight=1000}
+fuzzybot do nlp condition * at day today is * (false){weight=1000}
+[*] (@weatherword) [@showas] (@fahrenheitword) [@nearplace] *{weight=5}
+[turn] (on|activate|resume|start|continue|redo|begin) [*] (@notificationsword)
+fuzzybot do temperature saved as celsius{weight=100}
+fuzzybot do nlp word future tense for *{weight=1000}
+(pollen|sneeze|allergy|allergies) *
+are there jobs available
+(current|currently) [@nearplace] *{weight=5}
+[*] (@weatherword) @nearplace * please [*]{weight=6}
+(@weekendterms){weight=101}
+[*] (@tomorrowterms) [*] (@weatherword) [@showas] (@celsiusword) [@nearplace] *{weight=5}
+[*] (pollen|sneeze|allergy|allergies) (@forecast) [*]{weight=100}
+[@todayterms] (@weatherword) *{weight=5}
+[*] (@phonenumberword) is *{weight=100}
+bad (cat|kitty)
+(@outlook) * [@showas] (@celsiusword)
+(@forecast) [@showas] (@celsiusword) *{weight=5}
+fuzzybot do nlp condition * at period * on day diff # is * (true){weight=1000}
+fuzzybot do nlp temperature at weekend{weight=1000}
+fuzzybot do nlp condition * currently is * (true){weight=1000}
+fuzzybot do nlp temperature condition * at period * on day diff # is * (true){weight=1000}
+(@forecast) * [@showas] (@celsiusword){weight=5}
+fuzzybot do notification forecast updated{weight=1000}
+fuzzybot do notification handle * *{weight=100}
+fuzzybot do playing
+fuzzybot do condition (@allweatherterms) (false|undefined|unknown) at * in *{weight=1000}
+(@outlook){weight=5}
+(@updateword) [*] (location) [at|to|in|as] *
+fuzzybot do nlp condition * at weekend is * (true){weight=1000}
+you (asleep|sleeping|sleepin|in bed|nap|napping)
+fuzzybot do save location error{weight=100}
+fuzzybot do tempcondition *{weight=1000}
+[*] (pokemon|pokémon|pocket monster) [*]
+[*] (@pokemon) [*]
+[*] (want|download|get|install) [*] app [*]
+[*] betaworks [*]
+[*] [benedict] cumberbatch [*]
+[*] (are you|are you a) (@cat) [*]
+[*] [referral|referal|refer|promo] (code|codes) [*]
+(shut up|shutup|quiet|hush)
+[*] (site|website|url) [*]
+you are weird
+[*] what [*] app
+fuzzybot do notification activate saved *
+*
+fuzzybot do notification activate begin *
+fuzzybot do notification activate all
+fuzzybot do abtest push notification 00001
+nah not for me
+@no
+nah nah nah
+hellz to the yes
+yah yah yah
+@sureyes
+do you know _
+comic sans
+do you know _ _
+fuzzybot do do you know *
+fuzzybot do push notification subject at (15|16|17|18|19|20|21|22|23|0|1|2)
+fuzzybot do get today weather status{weight=1000}
+fuzzybot do push notification subject at (3|4|5|6|7|8|9|10|11|12|13|14)
+fuzzybot do weather alert text *{weight=1000}
+fuzzybot do weather alert text severe thunderstorm warning{weight=1000}
+fuzzybot do weather alert text excessive heat warning{weight=1000}
+fuzzybot do weather alert text tornado warning{weight=1000}
+fuzzybot do weather alert * {weight=1000}
+fall asleep
+[*] @sureyes [*]
+[play] tambourine
+(you|that) (suck|sucks)
+*
+you hurt my feelings
+again from the top
+[*] (@cruz) [*]
+[*] (@elvis) [*]
+[*] democrat [*]
+[*] (@clinton) [*]
+*
+[*] (@trump) [*]
+[*] republican [*]
+[*] idk [*]
+[*] (@kasich) [*]
+[*] (@bernie) [*]
+[*] (@nader) [*]
+[*] (found|discovered|noticed|saw|theres|there’s|there's|there is|saw|caught) [a] bug [*]
+fuzzybot do is a [*] (snooze|pause|hold|delay) [*]
+fuzzybot do notification change (turn off|stop|disable) [*] (all)
+fuzzybot do notification change not understand
+fuzzybot do is a [*] (turn off|off|stop|delete|remove|rm|end|del|unsub|unsubscribe) [*]
+fuzzybot do notification change saved
+*
+fuzzybot do notification change all
+fuzzybot do is a [*] (turn on|on|resume|start|continue|redo|begin|go) [*]
+fuzzybot do is a [*] @no [*]
+fuzzybot do is a *
+fuzzybot do is a [*] @yes [*]
+fuzzybot do is a [*] @sure [*]
+fuzzybot do notification change begin *
+fuzzybot do is a [*] @naughty [*]
+fuzzybot do notification change and *
+fuzzybot do is a [*] @cancel [*]
+*
+-redirect jigglypuff gifs
+fuzzybot do notification snooze all
+fuzzybot do notification snooze begin *
+*
+fuzzybot do notification snooze saved *
+*
+[*] sorry [*]
+[*] (done|cancel|exit|never mind|nevermind|help) [*]
+#
+*
+fuzzybot do notification deactivate saved *
+*
+fuzzybot do notification deactivate begin *
+fuzzybot do notification deactivate all
+fuzzybot do location was saved
+fuzzybot do user sent location attachment failed *
+@cancel{weight=100}
+skip for now
+5-day forecast
+(@hello|sure)
+*
+fuzzybot do first message
+menu (forecast|current weather)
+forecast
+fuzzybot do daily update too general 1
+set @notificationsword
+fuzzybot do daily update 2
+fuzzybot do daily update 3
+fuzzybot do save location *
+fuzzybot do is a [*] (@cancel) [*]{weight=100}
+more info
+[*] (later|@no) [*]
+fuzzybot do where do you live *
+fuzzybot do daily update too general 2
+[*] (tv|television|tee vee|teevee|tee-vee|netflix|hulu|tube|talky box|talk box|dvr) [*]
+more more
+no spoilers
+*
+[*] (@movies) [*]
+* from the 90s
+@sureyes
+tell me more
+[*] (@no) [*]
+fuzzybot do cannot sleep
+[*] insomnia [*]
+[*] i am tired [*]
+[*] cannot fall asleep [*]
+[*] cannot sleep [*]
+[*] i am sleepy [*]
+fuzzybot do abtest push notification 00002
+*
+help
+settings
+what if i do not have [*] insurance
+i keep vomiting [*]
+i (need|want) to talk about (@hotlines)
+i [*] have a * who wants to hurt themselves
+[i] (want|need) [to commit] suicide
+[i am] going to commit suicide
+[i] want to die
+i do not feel safe
+i am in a bad place
+i am going to hurt myself
+[i] (want|need) to kill [myself]
+[*] suicide [*]
+i keep throwing up [*]
+i feel sick
+i am not feeling well
+[*] is hurting me
+[*] (@stdslist) [*]
+i am a cutter
+{weight=100}i (want|need) to (terminate|end) [a] pregnancy
+i hate myself
+[i am] thinking of killing [myself]
+i do not have [*] insurance
+-redirect no insurance
+i cut myself
+i am hurting myself
+i [*] know [*] someone who wants to hurt themselves
+-redirect family planning
+i am [being] abused
+[*] abuses me
+i am throwing up [*]
+i am vomiting up [*]
+{weight=100}i (want|need) [an] abortion
+[i] want to hurt myself
+i have a high fever
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (good|great|awesome|well|fine|fantastic|super|wonderful|happy|glad|giddy|marvelous|magnificent|splendid|rad) [*]
+[*] [i am] [doing|feeling] [super|very|really|quite|extremely|so|way] (bad|sad|ill|upset|grumpy|not fine|pissed|pissy|rough|sick|terrible|awful|horrible|horrendous|yuck|yucky|frustrated) [*]
+[*] [i am] [just] (chilling|chillin|hanging|hangin|hanging out|hangin out) [*]
+*
+that is (cool|awesome|great|nice|good|interesting|sweet|chill) [*]
+you are (dumb|lame|stupid|bad|terrible|awful) [*]
+that is (dumb|lame|stupid|bad|terrible|awful) [*]
+[*] (nm|nothing much|not much|nothing) [*]
+you are (cool|awesome|great|nice|good|interesting|sweet|chill) [*]
+[*] how do (i|you) [*]
+fuzzybot do help{weight=1000}
+[*] (@helpword) [*]{weight=200}
+[*] what [else] (can|do) you do [*]
+uh pass
+@no
+absolutely
+*
+* not my type
+@sureyes
+*
+-redirect do you like tv
+fuzzybot do abtest push notification 00002 final
+fuzzybot do abtest push notification 00002 step 2 yes
+fuzzybot do abtest push notification 00002 step 3 yes answer *
+*
+fuzzybot do abtest push notification 00002 step 3 idk
+[*] (@blockword) [*]{weight=10}
+fuzzybot do abtest push notification 00002 step 3 no
+fuzzybot do abtest push notification 00002 step 2 no
+fuzzybot do abtest push notification 00002 step 2 idk
+[*] (fundraising|pledge|invest) [*]
+[*] (horoscope|astrology|astrological) [*]
+[*] retrograde [*]
+[*] [is|was] mars in retrograde [*]
+fuzzybot do pollen medium
+fuzzybot do pollen *
+fuzzybot do pollen low
+fuzzybot do pollen high
+meme
+(great|cool|awesome|ok|okay)
+[*] (u|you) (dislike|hate|despise) [*]
+[*] do not like cats [*]
+[*] (@hello) [*]
+nice{weight=101}
+how do you (say|pronounce) meme{weight=100}
+[*] i (like|love) (u|you|me|us) [*]
+you are a bad weather cat{weight=100}
+(@hello) cat
+[*] are you a (bot|robot|machine) [*]
+(@poncho)
+what is your (fave|favorite) programming language
+(pingpong|ping pong)
+[*] lets begin
+boop
+[*] (pronounce meme|meme pronunciation) [*]
+fuzzybot do meme pronunciation
+that sucks
+[*] (zamboni|pineapple|cabotage) [*]
+[*] (@goodbye) [*]{weight=1}
+(@no)
+pure
+[*] what is [the] safe word [*]
+[*] pong [*]
+(@sureyes)
+[*] (i|we|they) (dislike|hate|despise) (you|u) [*]
+[*] (purr|puurr|meow|roar|mew) [*]
+[*] do you understand [*]
+sup
+cats (are smelly|stink|reek)
+beep
+[*] what is your name [*]
+[*] (whats up|sup|whaddup|wyd) [*]
+[*] what is (happening|good) [*]
+[*] (how are you|how're you|howre you) [*]
+(how's things|hows things|how are things|howre things|how're things)
+zuck likes poncho
+[*] you are (a punk|a jerk|mean|a douche|douchy) [*]
+[*] what is up [*]
+meowmeow
+[*] what are you up to [*]
+you are a bad weather (fox|raccoon){weight=100}
+[*] what are you doing [*]
+bop
+[*] (@thanks) [@poncho|dude|cat|dog|child|man|my love|lover|homie|bro|player|playa|artist|weirdo]
+[*] am not a cat person [*]
+[*] what is your (code|codename|code name) [*]
+(whoami|who am i)
+[*] can you (talk|speak|meow|purr|schnurr|sing) [*]
+[*] (you|u) [are] my (kitty|cat) [*]
+[*] (hm|hmm|hrm|hrmm|hmmm) [*]
+[*] what is (shaking|shakin|going on|goin on|cracking) [*]
+[*] ping [*]
+[*] (@exit) [*]
+[*] (#/#/#) [*]
+[*] i do not know [*]
+[*] (jan|january|feb|february|mar|march|apr|april|may|jun|june|jul|july|aug|august|sep|sept|september|oct|october|nov|november|dec|december) #
+[*] leo [*]
+*
+[*] cancer [*]
+[*] aquarius [*]
+[*] libra [*]
+[*] scorpio [*]
+[*] aries [*]
+[*] taurus [*]
+[*] (#/#) [*]
+[*] never mind [*]
+[*] (capricorn|cap) [*]
+[*] virgo [*]
+[*] (pisces|fish) [*]
+[*] (sag|sagittarius|sagitarius) [*]
+[*] gemini [*]
+[*] worst [*]
+[*] (@exit) [*]
+*
+[*] bad [*]
+[*] good [*]
+*
+[*] sorry [*]
+[*] (what|which) [@movies] should i (watch|see) [*]
+[*] what did you do [*] weekend [*]
+[*] (seen|been to) [any|the] (@movies) [lately] [*]
+[*] (what|which) (is|are) your favorite (@movies) [*]
+[*] i am bored [*]
+[*] what [@movies] (would|do) you recommend i (watch|see) [*]
+stones
+[*] netflix (and|&|n) chill [*]
+[*] who is in charge [*]
+[*] are you (gay|lesbian|trans|transgender|queer|bi|bisexual|bi-sexual) [*]
+[*] are you [a] human [*]
+[*] (are you on|do you use) yeti [*]
+[*] do you have feelings [*]
+do you have [a] (@bfgf) (and/or) [a] (@bfgf)
+[*] (do|can) you [know] [how] [to] (program|programming|code|coding) [*]
+[*] what [are] (u|you) (up to|doing) [*]
+[*] what do you think (of|about) alexa [*]
+[*] are you [a] (fox|raccoon|racoon|coon) [*]
+[*] can we meet [*]
+beatles
+[*] talk dirty [*]
+[*] are you glad [*]
+[*] talk dirty to me [*]
+[*] who do you report to [*]
+[*] how much wood could a (woodchuck|wood chuck) chuck if a (woodchuck|wood chuck) could chuck wood [*]
+tell me a [funny] joke
+[*] do you drink beer [*]
+[*] who do you hang [out] with [*]
+[*] (what|how) (is|was) it like being a bot [*]
+[*] are you [a] (man|boy|dude) or [a] (woman|girl|gurl) [*]
+what is love
+[*] are you there [*]
+[*] do you (like|love) me [*]
+do you have [any] @siblings
+do you have [any] @siblings (and|or) @siblings
+[*] do you play go [*]
+[*] how (is|was) [it] being a bot [*]
+[*] [how] can i trust you [*]
+[*] are you [a] (man|woman|boy|girl|gurl|dude) [*]
+are you (real|fake)
+[*] (could|can) i hurt your feelings [*]
+[*] what (game|games) do you like [*]
+[*] what do you think (of|about) siri [*]
+how do you think (@kanye) (stays|stay|is) [so] fresh
+[*] (are you on|do you use) snapchat [*]
+[*] are you emotional [*]
+yo is it date time
+[*] (are you on|do you use) twitter [*]
+[*] who (is|was) your maker [*]
+[*] what is your twitter [*]
+[*] do you tweet [*]
+[*] (do you have|are you) [an] ai [*]
+[*] this for (real|fake) [*]
+[*] how (is|was) (siri|alexa|cortana) [*]
+[*] what is your (instagram|insta) [*]
+[*] you for real [*]
+fuzzybot do fresh kanye joke
+[*] what (does|did) bill [murray] whisper to [scarlet johannsen|scarlet] [*]
+[*] do you (snap|snapchat) [*]
+[*] can you feel emotion [*]
+[*] do you (instagram|insta) [*]
+[*] are you old [*]
+[*] do you live in (ny|nyc|new york|new york city|manhattan|brooklyn|queens|the bronx|bronx|staten island) [*]
+[*] why should i trust you [*]
+[*] are you young [*]
+[*] will you talk dirty [*]
+are you my friend
+[*] [what is] (your|ur|youre) (favorite|fav|fave) game [*]
+are you married
+[*] how old are you [*]
+[*] are you mad [*]
+[*] what is your snapchat [*]
+[*] what is your yeti [*]
+pc
+[*] are you sad [*]
+[*] beatles or stones [*]
+[*] where do you live [*]
+[*] how (are|were) you made [*]
+(emacs or vim|vim or emacs)
+[*] mac or pc [*]
+[*] (are you on|do you use) (instagram|insta) [*]
+(@bye)
+[*] can you predict [the] future [*]
+[who is john] borthwick
+[*] (do you use|are you on) wechat [*]
+[*] what do you think (of|about) cortana [*]
+[*] tweet much [*]
+(what|which) text editor [*]
+[*] why do we drive on parkways but park on driveways [*]
+[*] where [are] you [*]
+(where|how) do you [*] program [*]
+[*] paper or plastic [*]
+[*] what is (your|ur) kik [*]
+[*] should i drop out [*]
+[*] how (is|was) bot life [*]
+[*] do you [have] (dreams|dream) [*]
+[*] do you drink wine [*]
+[*] (what do you think of|tell me about|talk about) (greg|christian|sam|kuan|john|borthwick|john borthwick) [*]
+[*] who is your daddy [*]
+who is [a|the|your] [big] boss [*]
+[*] are you single [*]
+[*] where do you [like to] hang [*]
+[*] are you [a] computer [*]
+[*] do you do drugs [*]
+[do] (you|u) (like|love|hate|dislike|know) cortana
+(who|what) are you
+[*] (do|did) you (like|love) being a bot [*]
+[*] are you happy [*]
+[*] who do you root [*]
+mac
+[*] do you have [a] (@bfgf) [*]
+[*] (what|who) is your [fav|fave|favorite] team [*]
+[*] who made you [*]
+if (you are|youre|your|ur) happy and you know it
+[do] (you|u) (like|love|hate|dislike|know) alexa
+(emacs|vim)
+[*] [do] [you] (got|have) kik [*]
+how is (@kanye) [staying] [so] fresh
+[do] (you|u) (like|love|hate|dislike|know) siri
+date me [*]
+[can|will] [you] take me [out] to (dinner|a meal|lunch|brunch|breakfast|a movie|the movies|the theater|a show|a bar)
+can i take you [out] to (dinner|a meal|lunch|brunch|breakfast|a movie|the movies|the theater|a show|a bar)
+i want a relationship
+[*] date you [*]
+are you (gay|bi|bisexual|bi-sexual|hetero|heterosexual|straight|seeing anyone|single) [*]
+[*] will you be my (girlfriend|boyfriend|partner) [*]
+[*] will you (date|marry me) [*]
+[*] can we (meet|date) [*]
+[do] [you] [want to|wanna] [go on a] date
+i [want|wanna] [to|a] date
+[*] dating [*]
+i love you [*]
+[*] (boyfriend|girlfriend|partner) [*]
+i am single [and ready to mingle]
+i am not in a relationship
+let us date
+fuzzybot do onboarding finished *
+fuzzybot do post onboarding
+are you [a] fox
+nah brah
+[i am watching|i watch|im watching|i'm in to|i'm into|im into|im in to] *
+not so much
+people
+*
+heck yes
+love 'em
+-redirect dating hungry
+yes pump the brakes
+yeah man
+i am feeling something
+please stop
+cat fancy
+eh
+*
+[*] (sorry|apologies|i apologize) [*]
+*
+[*] don't notify me [*]
+(@notificationactionsword) [alarms|alarm|alerts|alert]
+[unsubscribe|cancel]
+(stop) [alarms|alarm|alerts|alert]
+notifications disable
+disable [notifications]
+[*] fuck (facebook|messenger|facebook messenger|instagram) [*]
+how are (ya|thing)
+[*] what do you like to do [*]
+ugh
+schnurr
+tweet [tweet] [*]
+twitter
+(what|really)
+[*] (you|u) (on|have) [a] (facebook|fb) [*]
+[*] (facebook|instagram) [*]
+[*] (facebook|instagram) [messenger] (sucks|blows) [*]
+[*] facebook is (good|great|awesome|wonderful) [*]
+fuzzybot do hahaha
+[*] messenger (sucks|blows)
+(haha|hahaha|hahahaha|lol|lolz|hehe|hehehe|hah)
+[*] (constantine|omnibang) [*]
+fuzzybot do is (@weatherphraseword) [*] (@outlook) [*]{weight=1000}
+fuzzybot do timeframe is [*] @tomorrowterms [*]{weight=1000}
+fuzzybot do make nice channel{weight=1000}
+fuzzybot do what is hour name for #
+fuzzybot do is (@weatherphraseword) [*] (@hourlyforecast) [*]{weight=1000}
+fuzzybot do weather is [*] @cloudweatherterms [*]{weight=1000}
+fuzzybot do weather is [*] @sleetweatherterms [*]{weight=1000}
+fuzzybot do weather is [*] @fogweatherterms [*]{weight=1000}
+fuzzybot do is a [*] @blockword [*]{weight=1000}
+fuzzybot do weather is [*] @freezingweatherterms [*]{weight=1000}
+fuzzybot do lowercase *{weight=1000}
+fuzzybot do weather is [*] @miserableweatherterms [*]{weight=1000}
+fuzzybot do nice timeframe *{weight=1000}
+(fuzzyboy|fuzzybob|furrybot|furryboy) *{weight=1}
+fuzzybot do is a *{weight=1000}
+fuzzybot do is (@weatherphraseword) [*] (@forecast) [*]{weight=1000}
+fuzzybot do is a [*] @cancel [*]{weight=1000}
+fuzzybot do weather is [*] @warmweatherterms [*]{weight=1000}
+fuzzybot do timeframe is [*] @todayterms [*]{weight=1000}
+fuzzybot do is (@weatherphraseword) [*] (@weatherword) [*]{weight=1000}
+fuzzybot do is a [*] (@naughty|@hotlines|@stdslist|@sensitivetopics|@badwordsinsults|@badwordsmiddleschool|@badwords4chan|@badwordsracist|@badwordssexist|@badwordsantilgbt|@badwordsableist) [*]{weight=1000}
+fuzzybot do weather is [*] @coldweatherterms [*]{weight=1000}
+fuzzybot do weather is [*] @rainweatherterms [*]{weight=1000}
+fuzzybot do is a [*] @sure [*]{weight=1000}
+fuzzybot do make nice username{weight=1000}
+fuzzybot do sentence *{weight=1000}
+fuzzybot do weather is [*] @windweatherterms [*]{weight=1000}
+fuzzybot do what is day name for #
+fuzzybot do what is today{weight=1000}
+fuzzybot do uppercase *{weight=1000}
+fuzzybot do unauthorized{weight=1000}
+fuzzybot do weather is [*] @snowweatherterms [*]{weight=1000}
+fuzzybot do is a [*] @yes [*]{weight=1000}
+fuzzybot do formal *{weight=1000}
+fuzzybot do weather is [*] @clearweatherterms [*]{weight=1000}
+fuzzybot do is (@weatherphraseword) [*] (@allweatherterms) [*]{weight=1000}
+fuzzybot do is a [*] @no [*]{weight=1000}
+fuzzybot do weather is [*] @hotweatherterms [*]{weight=1000}
+[*] (@sensitivetopics) [*]
+fuzzybot do ignore banned
+[*] wtf [*]
+[*] (@badwordsableist) [*]
+[*] (@badwords4chan) [*]
+[*] (@badwordsracist) [*]
+[*] (@badwordsantilgbt) [*]
+[*] (@badwordssexist) [*]
+[*] (@badwordsmiddleschool) [*]
+banned
+[*] (@badwordsinsults) [*]
+fuzzybot do condition (@allweatherterms) (false|undefined|unknown) * at [*]{weight=99}
+fuzzybot do condition error [*]
+[*] (how much|a lot of) pollen [*]
+[*] [i] (@bringwords) [*] [a|an|the] [*] (snow boots|snowboots|snow shoes|snowshoes|skis|ski goggles|ski mask|snow mask|boots|scarf|scarves|mittens) [*]
+fuzzybot do condition (@allweatherterms) (@allweatherterms) # at *{weight=100}
+[*] [i] (@bringwords) [*] [a|an|the] [*] (shorts|skort|skorts|skirt|skirts) [*]
+[*] [i] (@bringwords) [*] [a|an|the] [*] (sun glasses|sunglasses|sun shades|sunshades|shades) [*]
+[*] [i] (@bringwords) [*] [a|an|the] [*] (sandals) [*]
+[*] a (good|bad) hair day [*]
+[*] [i] (@bringwords) [*] [a|an|the] [*] (jacket|coat|gloves|sweater|mittens|winter boots|winter mask|scarf|scarves) [*]
+[*] [i] (@bringwords) [*] [a|an|the] [*] (umbrella|poncho|rain coat|raincoat|rain jacket|rainjacket|boots) [*]
+how is [my] hair
+fuzzybot do condition (@allweatherterms) true (#) at [*]{weight=100}
+fuzzybot do hunger topic
+[*] (food|eat|hunger|hungry|dinner|lunch|supper|brunch|breakfast|snack|famished|munchies|cook|recipe) [*]
+(show|send) * funny
+[*] cat (gif|gifs) [*]
+computer
+call me
+[*] the matrix [*]
+fuzzybot do who will win the election
+fuzzybot start voting booth
+[*] who is going to win [the] (@election) [*]
+[*] who will win [the] (@election) [*]
+[*] (who|what) are [you] voting for
+[*] for whom are you voting
+[*] are you voting for (@candidates)
+[*] are you voting for *
+abc
+(updates|update)
+谢谢
+[*] what is a kuan cat [*]
+type
+ignore me
+[*] i want to believe [*]
+install
+[*] glitter [*]
+(what|which) (day|weekday|day of the week) is it
+[*] (plus plus|plusplus) [*]
+[*] poncho [*]
+*
+fuzzybot do wildcard *{weight=1}
+fuzzybot do lang unknown wildcard{weight=1}
+fuzzybot do lang en wildcard{weight=1}
+[*] advice [*]
+(current time|what time is it)
+yeah i am sorry
+*
+-redirect are you sorry
+fuzzybot do fallback forecast as wind at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as fog at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as cold [at] [*]{weight=500}
+fuzzybot do fallback forecast as cloudy at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as rain [at] [*]{weight=500}
+fuzzybot do fallback forecast as clear at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as fog [at] [*]{weight=500}
+fuzzybot do fallback forecast as wind [at] [*]{weight=500}
+fuzzybot do fallback forecast as snow at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as hot at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as sleet [at] [*]{weight=500}
+fuzzybot do fallback forecast as clear [at] [*]{weight=500}
+fuzzybot do fallback forecast as snow [at] [*]{weight=500}
+fuzzybot do fallback forecast as rain at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as cold at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as cloudy [at] [*]{weight=500}
+fuzzybot do fallback forecast{weight=500}
+fuzzybot do fallback forecast as hot [at] [*]{weight=500}
+fuzzybot do fallback forecast as sleet at (0|1|2|17|18|19|20|21|22|23){weight=500}
+fuzzybot do fallback forecast as *{weight=500}
+*
+i want that recipe
+(@sureyes)
+fuzzybot do user sent location attachment (found|failed) *{weight=100}
+*{weight=1}
+@sureyes{weight=2}
+@no{weight=2}
+[*] (help|settings) [*]{weight=1000}
+[*] the pits [*]
+[*] top (5|five) [*]
+[*] any other [*]
+[*] [my name is|my nickname is|it is|call me] *
+*
+[*] (@celsiusword) [*]
+*{weight=80}
+[*] (turn off|stop|disable) [*] (all) [*]{weight=1001}
+*{weight=100}
+[*] (@fahrenheitword) [*]
+make default [location]
+*
+z
+tuv
+hijklmnop
+[*] (game of thrones|got) [*]{weight=2}
+[*] sports [*]{weight=2}
+[*] pickleball [*]{weight=2}
+*{weight=1}
+[*] (idk|skynet) [*] {weight=1}
+*{weight=1}
+(what’s|what's|what is) a warning{weight=1000}
+yawn
+sounds boring
+do you think i should watch it
+*
+stop it
+[no|nope|nah]
+[yes|yeah|yep]
+(i am|i'm) not
+[yes|yep|yeah]
+[nope|no|nah]
+@sureyes
+@no
+[*] weathercat [*]
+fuzzybot do onboarding ask user location
+(5day|5 day|5-day) forecast{weight=100}
+fuzzybot do weather convert temp{weight=100}
+fuzzybot do daily update 2 continue
+fuzzybot do daily update eval preference *
+fuzzybot do weather error *{weight=100}
+fuzzybot do onboarding complete *
+fuzzybot do daily update 1
+[*] (@whatrequest) [*] (@weatherword) [@todayterms]{weight=5}
+[*] (are you|are you a|are you an) (@dumbwords) [*]
+fuzzybot do get location variable{weight=100}
+yes
+direct: nlpCheckOutlook
+direct: nlpCheckHourlyForecast
+[error] fuzzybot do (frizz|pollen) error *{weight=100}
+[*] (weather|temp|temperature) [@todayterms] [@nearplace] *{weight=5}
+fuzzybot do weather in * with facebook buttons{weight=100}
+[*] (@whatrequest) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (weather|temp|temperature) [*] (@tomorrowterms){weight=5}
+[*] (@whatrequest) [*] (weather|temp|temperature) [@todayterms]{weight=5}
+[*] (weather|temp|temperature) [@nearplace] * (@tomorrowterms) [*]{weight=5}
+fuzzybot do help
+[*] (@whatrequest) [*] (@weatherword) [*] (@tomorrowterms) [*] [@nearplace] *{weight=5}
+direct: nlpCheckForecast
+[@todayterms] (weather|temp|temperature) [@todayterms]{weight=5}
+fuzzybot do weather buttons in *{weight=101}
+fuzzybot do nlp weather not found{weight=1000}
+yeah
+fuzzybot do is a [*] @naughty [*]{weight=1000}
+nope
+fuzzybot do notification forecast at *{weight=100}
+(weather|temp|temperature) (@tomorrowterms) [@hereterms]{weight=5}
+fuzzybot do notification forecast{weight=100}
+fuzzybot do weather outside date range{weight=100}
+[*] (@tomorrowterms) [*] (weather|temp|temperature) [@nearplace] *{weight=5}
+[*] (weather|temp|temperature) [*] (@tomorrowterms) [@nearplace] *{weight=5}
+undefined
+fuzzybot do high temperature is #{weight=100}
+fuzzybot do low temperature is #{weight=100}
+no
+hair (&|and) pollen{weight=100}
+* (weather|temp|temperature){weight=5}
+[*] (@whatrequest) [*] (weather|temp|temperature) [*] (@tomorrowterms) [*] [@nearplace] *{weight=5}
+[*] (@whatrequest) [*] (@tomorrowterms) [*] (weather|temp|temperature){weight=5}
+[*] (@tomorrowterms) [*] (weather|temp|temperature) [@nearplace] * [@showas] (@celsiusword){weight=5}
+[*] (weather|temp|temperature) [*] (@tomorrowterms) [*] [@nearplace] * [@showas] (@celsiusword){weight=5}
+fuzzybot do location not found *{weight=100}

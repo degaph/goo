@@ -1,0 +1,7 @@
+<h2>Select Account</h2>
+<p>You have multiple accounts - please select which account you want to look at right now:</p>
+<ul>
+  <% @user.accounts.each do |account| %>
+    <li><a href="/login/<%= @user.id %>/account_select/<%= account.id %>"><%= account.account_name %></li>
+  <% end %>
+</ul>

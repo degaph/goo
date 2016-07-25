@@ -1,0 +1,238 @@
+<%= partial "/visualizations/bar_chart_header" %>
+<%= partial "/visualizations/timeline_chart_header", {locals: {include_d3: false}} %>
+<div class="row">
+  <div class="col-md-12">
+    <h2><%= @bot.bot_name %></h2>
+    <h5>Rule: "<div style="display:inline" id="node_name"><%= @rule.name%></div>" (<%= @rule.platform %>)</h5>
+  </div>
+</div>
+<%= partial "/layouts/partials/control_filter", {locals: {post_path: "/rules/#{@rule.id}/#{@default_timeframe_string.split(" to ").first}/#{@default_timeframe_string.split(" to ").last}"}} %>
+<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+  <ul id="myTabs" class="nav nav-tabs myTabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#basic-stats" id="basic-stats-tab" role="tab" data-toggle="tab" aria-controls="basic-stats" aria-expanded="false" name="basic-stats-tab">Basic Stats</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#timeline" role="tab" id="timeline-tab" data-toggle="tab" aria-controls="timeline" aria-expanded="true" name="timeline-tab">Timeline</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#recommended-changes" role="tab" id="recommended-changes-tab" data-toggle="tab" aria-controls="recommended-changes" aria-expanded="true" name="recommended-changes-tab">Recommended Changes</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#retention" role="tab" id="retention-tab" data-toggle="tab" aria-controls="retention" aria-expanded="true" name="retention-tab">Retention</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#examples" role="tab" id="examples-tab" data-toggle="tab" aria-controls="examples" aria-expanded="true" name="examples-tab">Examples</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#next-rules" role="tab" id="next-rules-tab" data-toggle="tab" aria-controls="next-rules-drilldown" aria-expanded="true" name="next-rules-tab">Next Rules</a>
+    </li>
+  </ul>
+  <div id="myTabContent" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade active in" id="basic-stats" aria-labelledby="basic-stats-tab">
+      <div class="row">
+        <div class="col-md-12"><h3>Basic Stats</h3></div>
+        <p>Core information about users who hit this rule</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <b>Overview</b>
+          <ul>
+            <li><b>Total Interactions: </b><div style="display:inline" id="node_loss"><%= @interactions %><% if @interactions != @interactions_all_platforms %> (<%= @interactions_all_platforms %> across platforms)<% end %></div></li>
+            <li><b>Bounce Rate: </b><div style="display:inline" id="node_loss"><%= ((@session_drops/@interactions.to_f)*100).round(2) %>%<% if ((@session_drops/@interactions.to_f)*100) != ((@session_drops_all_platforms/@interactions_all_platforms.to_f)*100) %> (<%= ((@session_drops_all_platforms/@interactions_all_platforms.to_f)*100).round(2) %>% across platforms)<% end %></div></li>
+            <li><b>Total Bounces: </b><div style="display:inline" id="node_loss_raw"><%= @session_drops %><% if @session_drops != @session_drops_all_platforms %> (<%= @session_drops_all_platforms %> across platforms)<% end %></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="timeline" aria-labelledby="timeline-tab">
+      <div class="row">
+        <div class="col-md-12"><h3>Timeline</h3></div>
+        <p>Interactions and Bounces over time for this rule</p>
+      </div>
+      <div class="row">
+        <div id="main_timeline" class="col-md-12" style="height: 300px;"></div>
+      </div>
+      <div class="row">
+        <div id="main_timeline_all_platforms" class="col-md-12" style="height: 300px;"></div>
+      </div>
+      <%= partial "/visualizations/timeline_chart", {locals: {name: "main_timeline", url: "/rules/#{@rule.id}/#{@start_time.strftime("%Y-%m-%d")}/#{@end_time.strftime("%Y-%m-%d")}/timeline_data.json?&percentile_low=#{@percentile_low}&percentile_high=#{@percentile_high}"}} %>
+      <% if @interactions != @interactions_all_platforms %>
+      <%= partial "/visualizations/timeline_chart", {locals: {name: "main_timeline_all_platforms", url: "/rules/#{@rule.id}/#{@start_time.strftime("%Y-%m-%d")}/#{@end_time.strftime("%Y-%m-%d")}/timeline_data_all_platforms.json?&percentile_low=#{@percentile_low}&percentile_high=#{@percentile_high}"}} %>
+      <% end %>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="recommended-changes" aria-labelledby="recommended-changes-tab">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Recommended Changes</h3>
+          <p>Statistical test results for considering user drop out rates per bot response</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table">
+            <tr>
+              <th>Response text</th>
+              <th>Number of Interactions</th>
+              <th>Bounce Rate</th>
+              <th>Significant?</th>
+            </tr>
+            <% @should_change.each do |sc| %>
+              <% 
+                color_class = ""
+                if (@significances[sc[0]][:chi_square] < 0.05) && sc[3] < 0
+                  color_class = "danger"
+                elsif (@significances[sc[0]][:chi_square] < 0.05) && sc[3] > 0
+                  color_class = "success"
+                else
+                  color_class = "warning"
+                end
+              %>
+              <tr class="<%= color_class %>">
+                <td><%= sc[0] %></td>
+                <td><%= (sc[2]).commas %> (<%= ((sc[2]/(@dropped_raw.values.sum+@not_dropped_raw.values.sum).to_f)*100).round(2) %>% of all responses)</td>
+                <td><%= sc[1] %>%</td>
+                <td><%= @significances[sc[0]][:chi_square] < 0.05 ? "Yep!" : "No." %></td>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="retention" aria-labelledby="retention-tab">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Session Drops vs. Session Continues</h3>
+          <p>Basic distinctions between people who ended their conversation with the bot at this interaction point versus people who continued</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+            <h4>Users who continued talking at this point</h4>
+            <ul>
+              <li><b>Average Conversation Length: </b><%= @rule_tooltip.average_length_not_dropped_conversations.round(2) %><% if @rule_tooltip.average_length_not_dropped_conversations != @rule_tooltip.average_length_not_dropped_conversations_all_platforms %> (<%= @rule_tooltip.average_length_not_dropped_conversations_all_platforms.round(2) %> across platforms)<% end %></li>
+              <li><b>Number of sessions continuing from here: </b><%= @rule_tooltip.not_dropped_interaction_count %><% if @rule_tooltip.not_dropped_interaction_count != @rule_tooltip.not_dropped_interaction_count_all_platforms %> (<%= @rule_tooltip.not_dropped_interaction_count_all_platforms %> across platforms)<% end %></li>
+              <li><b>Number of users continuing from here: </b><%= @rule_tooltip.not_dropped_user_count %><% if @rule_tooltip.not_dropped_user_count != @rule_tooltip.not_dropped_user_count_all_platforms %> (<%= @rule_tooltip.not_dropped_user_count_all_platforms %> across platforms)<% end %></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Human inputs for continuing sessions</h4>
+          <div id="not_dropped_typical_human_messages"></div>
+        </div>
+        <div class="col-md-4">
+          <h4>Bot responses for continuing sessions</h4>
+          <div id="not_dropped_typical_bot_responses"></div>
+        </div>    
+        <% not_dropped_human_sum = @rule_tooltip.not_dropped_typical_human_messages.collect(&:last).sum %>
+        <% not_dropped_bot_sum = @rule_tooltip.not_dropped_typical_bot_responses.collect(&:last).sum %>
+            <%= partial "/visualizations/bar_chart", {locals: {name: "not_dropped_typical_human_messages", data: @rule_tooltip.not_dropped_typical_human_messages.sort_by{|k,v| v}.reverse.first(10).collect{|x| [x[0], x[1]/not_dropped_human_sum]}.to_json}} %>
+            <%= partial "/visualizations/bar_chart", {locals: {name: "not_dropped_typical_bot_responses", data: @rule_tooltip.not_dropped_typical_bot_responses.sort_by{|k,v| v}.reverse.first(10).collect{|x| [x[0], x[1]/not_dropped_bot_sum]}.to_json}} %>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Users who stopped talking at this point</h4>
+          <ul>
+            <li><b>Average Conversation Length: </b><%= @rule_tooltip.average_length_dropped_conversations.round(2) %><% if @rule_tooltip.average_length_dropped_conversations != @rule_tooltip.average_length_dropped_conversations_all_platforms %> (<%= @rule_tooltip.average_length_dropped_conversations_all_platforms.round(2) %> across platforms)<% end %></li>
+            <li><b>Number of sessions lost here: </b><%= @rule_tooltip.dropped_interaction_count %><% if @rule_tooltip.dropped_interaction_count != @rule_tooltip.dropped_interaction_count_all_platforms %> (<%= @rule_tooltip.dropped_interaction_count_all_platforms %> across platforms)<% end %></li>
+            <li><b>Number of users lost here: </b><%= @rule_tooltip.dropped_user_count %><% if @rule_tooltip.dropped_user_count != @rule_tooltip.dropped_user_count_all_platforms %> (<%= @rule_tooltip.dropped_user_count_all_platforms %> across platforms)<% end %></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Human inputs for ended sessions</h4>
+          <div id="dropped_typical_human_messages"></div>
+        </div>
+        <div class="col-md-4">
+          <h4>Bot responses for ended sessions</h4>
+          <div id="dropped_typical_bot_responses"></div>
+        </div>
+        <% dropped_human_sum = @rule_tooltip.dropped_typical_human_messages.collect(&:last).sum %>
+        <% dropped_bot_sum = @rule_tooltip.dropped_typical_bot_responses.collect(&:last).sum %>
+            <%= partial "/visualizations/bar_chart", {locals: {name: "dropped_typical_human_messages", data: @rule_tooltip.dropped_typical_human_messages.sort_by{|k,v| v}.reverse.first(10).collect{|x| [x[0], x[1]/dropped_human_sum]}.to_json}} %>
+            <%= partial "/visualizations/bar_chart", {locals: {name: "dropped_typical_bot_responses", data: @rule_tooltip.dropped_typical_bot_responses.sort_by{|k,v| v}.reverse.first(10).collect{|x| [x[0], x[1]/dropped_bot_sum]}.to_json}} %>
+%>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="examples" aria-labelledby="examples-tab">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Examples</h3>
+          <p>Highly-vetted interactions that are representative of these interactions</p>
+          <% if @examples[:questions].length != 0 %>
+            <h5>Questions users asked</h5>
+            <ul>
+              <% @examples[:questions].each do |example| %>
+                <li><blockquote><%= example.first %></blockquote></li>
+              <% end %>
+            </ul>
+            <hr />
+          <% end %>
+          <% if @examples[:statements].length != 0 %>
+            <h5>Statements users made</h5>
+            <ul>
+              <% @examples[:statements].each do |example| %>
+                <li><blockquote><%= example.first %></blockquote></li>
+              <% end %>
+            </ul>
+          <% end %>          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="next-rules" aria-labelledby="next-rules-tab">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Next Rules</h3>
+          <p>Common rules that users who hit this rule move on to in the next interaction with the bot.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table">
+            <tr>
+              <th>Rule Platform</th>
+              <th>Rule Topic</th>
+              <th>Rule Name</th>
+              <th>Number of Interactions</th>
+              <th>Bounce Rate</th>
+            </tr>
+            <!-- It would be easy to paginate in js only but I'm not fast enough at js only to js only it so fifn. -->
+            <% @next_step.sort_by{|k,v| v}.reverse.first(10).each do |rule_name, traffic_score| %>
+              <% 
+                rule_class = "" 
+                rule = @rules[@rule_id_map[rule_name]]
+                if @next_risks[rule_name] < 0.01
+                  rule_class = "success"
+                elsif @next_risks[rule_name] < 0.1
+                  rule_class = "warning"
+                else
+                  rule_class = "danger"
+                end
+              %>
+              <tr class="<%= rule_class %>">
+                <td><%= rule.platform %></td>
+                <td><%= rule.topic %></td>
+                <td><a href="/rules/<%= rule.id %>/<%= @start_time.strftime("%Y-%m-%d") %>/<%= @end_time.strftime("%Y-%m-%d") %>?percentile_low=<%= @percentile_low %>&percentile_high=<%= @percentile_high %>"><%= rule.name.length > 100 ? rule.name[0..80]+"..." : rule.name %></a></td>
+                <td><%= (traffic_score*@interactions).ceil %><% if traffic_score != @next_step_all_platforms[rule_name] %> (<%= (@next_step_all_platforms[rule_name]*@interactions_all_platforms).ceil %> across platforms)<% end %></td>
+                <td><%= (@next_risks[rule_name]*100).to_i %>% <% if (@next_risks[rule_name]*100).to_i != (@next_risks_all_platforms[rule_name]*100).to_i %>(<%= (@next_risks_all_platforms[rule_name]*100).to_i %>% across platforms) <% end %></td>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+  $("#retention svg").remove()
+  draw_not_dropped_typical_human_messages()
+  draw_not_dropped_typical_bot_responses()
+  draw_dropped_typical_human_messages()
+  draw_dropped_typical_bot_responses()    
+})
+</script>

@@ -1,0 +1,235 @@
+<script>
+$( document ).ready(function() {
+  $.get( "/rules/outline/<%= @bot.id %>/<%= @start_time.strftime("%Y-%m-%d") %>/<%= @end_time.strftime("%Y-%m-%d") %>/count_data.json?&percentile_low=<%= @percentile_low %>&percentile_high=<%= @percentile_high %><%= @platforms.collect{|p| "&#{p}=#{p}"}.join("") %>", function( data ) {
+    data = JSON.parse(data)
+    $("#sessions_per_user").text(data.sessions_per_user) 
+    $("#user_session_count").text(data.user_session_count) 
+    $("#user_count").text(data.user_count) 
+    $("#user_session_length_average").text(data.user_session_length_average) 
+    $("#user_session_count_messages").text(data.user_session_count_messages) 
+    $("#rule_count").text(data.rule_count) 
+  });
+  $.get( "/rules/outline/<%= @bot.id %>/<%= @start_time.strftime("%Y-%m-%d") %>/<%= @end_time.strftime("%Y-%m-%d") %>/retention_grid.json?&percentile_low=<%= @percentile_low %>&percentile_high=<%= @percentile_high %><%= @platforms.collect{|p| "&#{p}=#{p}"}.join("") %>", function( data ) {
+    var color_swatch = ["#ffffff", "#ffffe5","#f7fcb9","#d9f0a3","#addd8e","#78c679","#41ab5d","#238443","#006837","#004529"] 
+    data = JSON.parse(data)
+    table = "<tr>"
+    for (i = 0 ; i < data.general_retention.length; i++){
+      table = table.concat("<th>"+(i*10).toString()+"</th>")
+      for(j = 0; j < data.general_retention[i].length; j++){
+        table = table.concat("<td style=\"background:"+color_swatch[data.general_retention[i][j][1]]+";\">"+(Math.round(data.general_retention[i][j][0]*10000)/100).toString()+"%</td>")
+      }
+      table = table.concat("<tr>")
+    }
+    $('#retention_general tr:last').after(table)
+    if (data.retention_grid[0].length == 0 & data.retention_grid[1].length == 0 & data.retention_grid[2].length == 0){
+      $("#retention_drill_down").text("Not enough data for this filter.")
+    } else{
+      full_table = "<div id=\"\" style=\"overflow:scroll; width:960px;\"><table class=\"table\" style=\"font-size:0.75em\"><tr><th>Date</th><th>New Users</th>"
+      for (i = 1; i < data.retention_grid[0][0].length; i++){
+        full_table = full_table.concat("<th>"+i.toString()+"</th>")
+      }
+      full_table = full_table.concat("</tr>")
+      for (i = 1; i < data.retention_grid[0].length; i++){
+        full_table = full_table.concat("<tr>")
+        for (j = 0; j < data.retention_grid[0][i].length; j++){
+          if (j == 0){
+            date = moment(data.retention_grid[0][i][j])
+            full_table = full_table.concat("<th>"+date.year().toString()+"-"+(date.month()+1).toString()+"-"+date.date().toString()+"</th>")
+          } else if (j == 1){
+            full_table = full_table.concat("<th>"+data.retention_grid[0][i][j][0]+"</th>")
+          } else {
+            full_table = full_table.concat("<td style=\"background:"+color_swatch[data.retention_grid[0][i][j][1]]+";\">"+(Math.round(data.retention_grid[0][i][j][0]*10000)/100).toString()+"%</th>")
+          }
+        }
+        full_table = full_table.concat("</tr>")
+      }
+      $("#retention_drill_down").html(full_table)
+    }
+  });
+  $.get( "/rules/outline/<%= @bot.id %>/<%= @start_time.strftime("%Y-%m-%d") %>/<%= @end_time.strftime("%Y-%m-%d") %>/return_trips.json?&percentile_low=<%= @percentile_low %>&percentile_high=<%= @percentile_high %><%= @platforms.collect{|p| "&#{p}=#{p}"}.join("") %>", function( data ) {
+    data = JSON.parse(data)
+    max_val = 50
+    if (data.length < 50) {
+      max_val = data.length
+    }
+    table_data = ""
+    for (i = 0; i < max_val; i++){
+      risk_class = ""
+      if (data[i].risk < 0.01){
+        risk_class = "success"
+      } else if (data[i].risk < 0.1){
+        risk_class = "warning"      
+      } else {
+        risk_class = "danger"
+      }
+      table_data = table_data.concat("<tr class=\""+risk_class+"\">")
+      table_data = table_data.concat("<td>"+data[i].platform+"</td>")
+      table_data = table_data.concat("<td>"+data[i].topic+"</td>")
+      table_data = table_data.concat("<td><a href=\"/rules/"+data[i].id+"/<%= @start_time.strftime("%Y-%m-%d") %>/<%= @end_time.strftime("%Y-%m-%d") %>?percentile_low=<%= @percentile_low %>&percentile_high=<%= @percentile_high %><%= @platforms.collect{|p| "&#{p}=#{p}"}.join("") %>\">"+data[i].rule_name+"</a></td>")
+      table_data = table_data.concat("<td>"+data[i].return_frequency+"</td>")
+      table_data = table_data.concat("<td>"+(Math.round(data[i].risk*10000)/100)+"%</td>")
+      table_data = table_data.concat("</tr>")
+    }
+    $("#return_trips tr:last").after(table_data)
+  });
+});
+</script>
+<div class="row">
+  <div class="col-md-12">
+    <h2><%= @bot.bot_name %></h2>
+  </div>
+</div>
+<%= partial "/visualizations/timeline_chart_header", {locals: {include_d3: true}} %>
+<%= partial "/layouts/partials/control_filter", {locals: {post_path: "/rules/outline/#{@bot.id}"}} %>
+<div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+  <ul id="myTabs" class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="<% if @page == 1 %>active<% end %>">
+      <a href="#basic-stats" id="basic-stats-tab" role="tab" data-toggle="tab" aria-controls="basic-stats" aria-expanded="<% if @page != 1 %>false<% else %>true<% end %>" name="basic-stats-tab">Basic Stats</a>
+    </li>
+    <li role="presentation" class="<% if @page != 1 %>active<% end %>">
+      <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="<% if @page != 1 %>true<% else %>false<% end %>" name="home-tab">Rules Overview</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#timeline" role="tab" id="timeline-tab" data-toggle="tab" aria-controls="timeline" aria-expanded="true" name="timeline-tab">Timeline</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#retention" role="tab" id="retention-tab" data-toggle="tab" aria-controls="retention" aria-expanded="true" name="retention-tab">Retention</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#retention-drilldown" role="tab" id="retention-drilldown-tab" data-toggle="tab" aria-controls="retention-drilldown" aria-expanded="true" name="retention-drilldown-tab">Retention Drill-down</a>
+    </li>
+    <li role="presentation" class="">
+      <a href="#return-trips" role="tab" id="return-trips-tab" data-toggle="tab" aria-controls="return-trips" aria-expanded="true" name="return-trips-tab">Return Trips</a>
+    </li>
+  </ul>
+  <div id="myTabContent" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade <% if @page == 1 %>active<% end %> in" id="basic-stats" aria-labelledby="basic-stats-tab">
+      <div class="row">
+        <div class="col-md-12"><h3>Basic Stats</h3></div>
+        <p>Basic Statistics about the bot within these filter parameters</p>
+      </div>
+      <div class="row">
+        <ul>
+          <li>Total Messages Sent: <%= @counts.values.sum.commas %></li>
+          <li>Total User Sessions: <div class="inline" id="user_session_count"></div></li>
+          <li>Average Sessions per User: <div class="inline" id="sessions_per_user"></div></li>
+          <li>Total Users: <div class="inline" id="user_count"></div></li>
+          <li>Average Session Length: <div class="inline" id="user_session_length_average"></div></li>
+          <li>Average Number of Messages in Session: <div class="inline" id="user_session_count_messages"></div></li>
+          <li>Number of rules <%= @bot.bot_name %> knows: <div class="inline" id="rule_count"></div></li>
+          <li>Number of rules <%= @bot.bot_name %> people used: <%= @counts.length.commas %></li>
+        </ul>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade <% if @page != 1 %>active<% end %> in" id="home" aria-labelledby="home-tab">
+      <div class="row">
+        <div class="col-md-12"><h3>Rules Overview</h3></div>
+        <p>Interactions users are having with the bot and how they are performing within these filter parameters</p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table">
+            <tr>
+              <th>Rule Platform</th>
+              <th>Rule Topic</th>
+              <th>Rule Name</th>
+              <th>Number of Interactions</th>
+              <th>Bounce Rate</th>
+            </tr>
+            <!-- It would be easy to paginate in js only but I'm not fast enough at js only to js only it so fifn. -->
+            <% @rules[(@page-1)*@per_page..(@page)*@per_page].each do |rule| %>
+              <% 
+                rule_class = "" 
+                if @last_rule_hits[[rule.name, rule.platform]].to_f/@counts[[rule.name, rule.platform]] < 0.01
+                  rule_class = "success"
+                elsif @last_rule_hits[[rule.name, rule.platform]].to_f/@counts[[rule.name, rule.platform]] < 0.1
+                  rule_class = "warning"
+                else
+                  rule_class = "danger"
+                end
+              %>
+              <tr class="<%= rule_class %>">
+                <td><%= rule.platform %></td>
+                <td><%= rule.topic %></td>
+                <td><a href="/rules/<%= rule.id %>/<%= @start_time.strftime("%Y-%m-%d") %>/<%= @end_time.strftime("%Y-%m-%d") %>?percentile_low=<%= @percentile_low %>&percentile_high=<%= @percentile_high %><%= @platforms.collect{|p| "&#{p}=#{p}"}.join("") %>"><%= rule.name.length > 100 ? rule.name[0..80]+"..." : rule.name %></a></td>
+                <td><%= @counts[[rule.name, rule.platform]] || 0 %></td>
+                <td><%= ((@last_rule_hits[[rule.name, rule.platform]].to_f/@counts[[rule.name, rule.platform]])*100).to_i %>%</td>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="pagination pagination-lg">
+            <% 1.upto(@rules.length/@per_page) do |page| %>
+              <% if page == @page %>
+                <li class="active"><a href="#"><%= page %></a></li>          
+              <% else %>
+                <li><a href="/rules/outline/<%= @bot.id %>?start_time=<%= @start_time.strftime("%Y-%m-%d") %>&end_time=<%= @end_time.strftime("%Y-%m-%d") %>&percentile_low=<%= @percentile_low %>&percentile_high=<%= @percentile_high %>&page=<%= page %><%= (@platforms-["page"]).collect{|p| "&#{p}=#{p}"}.join("") %>"><%= page %></a></li>          
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="timeline" aria-labelledby="timeline-tab">
+      <div class="row">
+        <div class="col-md-12"><h3>Timeline</h3></div>
+        <p>Activity patterns within these filter parameters</p>
+      </div>
+      <div class="row">
+        <div id="main_timeline" class="col-md-12" style="height: 300px;"></div>
+      </div>
+      <%= partial "/visualizations/timeline_chart", {locals: {name: "main_timeline", url: "/rules/outline/#{@bot.id}/#{@start_time.strftime("%Y-%m-%d")}/#{@end_time.strftime("%Y-%m-%d")}/timeline_data.json?&percentile_low=#{@percentile_low}&percentile_high=#{@percentile_high}#{@platforms.collect{|p| "&#{p}=#{p}"}.join("")}"}} %>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="retention" aria-labelledby="retention-tab">
+      <div class="row">
+        <div class="col-md-12"><h3>Retention</h3></div>
+        <p>What percent of users are retained as the number of days of use increases within these filter parameters</p>
+      </div>
+      <div class="row">
+        <table id="retention_general" class="table" style="font-size:0.75em">
+          <tr>
+            <th>Days (in tens)</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="retention-drilldown" aria-labelledby="retention-drilldown-tab">
+      <div class="row">
+        <div class="col-md-12"><h3>Retention Drill-down</h3></div>
+        <p>What percent of users are retained as the number of days of use increases within these filter parameters as a rolling cohort through the date range</p>
+      </div>
+      <div class="row">
+        <div id="retention_drill_down"></div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="return-trips" aria-labelledby="return-trips-tab">
+      <div class="row">
+        <div class="col-md-12"><h3>Return Trips</h3></div>
+      </div>
+      <div class="row">
+        <table id="return_trips" class="table">
+          <tr>
+            <th>Rule Platform</th>
+            <th>Rule Topic</th>
+            <th>Rule Name</th>
+            <th>Number of Interactions</th>
+            <th>Bounce Rate</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
